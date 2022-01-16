@@ -12,7 +12,7 @@ app = Flask(__name__)
 def index():
     return "<h1>Welcome to our server !!</h1>"
 
-@app.route('/commodity', methods=['GET'])
+@app.route('/commodities', methods=['GET'])
 def get_commodity():
     commodity_code = request.args.get('c')
     c = Commodity(commodity_code)
@@ -28,6 +28,11 @@ def sqlite3():
     rows = db.run_query(sql)
 
     return "<h1>SQLite</h1>"
+
+# Test SQLLite3
+@app.route('/flaps')
+def flaps():
+    return "<h1>Flaps</h1>"
 
 
 
