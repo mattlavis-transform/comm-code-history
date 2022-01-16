@@ -12,14 +12,13 @@ app = Flask(__name__)
 def index():
     return "<h1>Welcome to our server !!</h1>"
 
-@app.route('/commodities', methods=['GET'])
+# @app.route('/commodities', methods=['GET'])
+@app.route('/commodities')
 def get_commodity():
     commodity_code = request.args.get('c')
     c = Commodity(commodity_code)
     return c.data
-    # return "<h1>Getting a commodity " + commodity_code + " </p>"
 
-# Test SQLLite3
 @app.route('/sqlite3')
 def sqlite3():
     database_filename = os.path.join(os.getcwd(), "db", "commodity-code-history.db")
