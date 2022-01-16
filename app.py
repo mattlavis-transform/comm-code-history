@@ -15,7 +15,8 @@ def index():
 # @app.route('/commodities', methods=['GET'])
 @app.route('/commodities')
 def get_commodity():
-    commodity_code = request.args.get('c')
+    # commodity_code = request.args.get('c')
+    commodity_code = "0702000007"
     c = Commodity(commodity_code)
     return c.data
 
