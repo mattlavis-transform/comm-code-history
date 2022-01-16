@@ -5,7 +5,8 @@ import os
 
 
 class Commodity2(object):
-    def __init__(self):
+    def __init__(self, commodity_code):
+        self.commodity_code = commodity_code
         self.get_date_sql_lite()
 
     def get_date_sql_lite(self):
@@ -14,7 +15,7 @@ class Commodity2(object):
     
         instance = {
             "sid": 1,
-            "goods_nomenclature_item_id": "test",
+            "goods_nomenclature_item_id": self.commodity_code,
             "validity_start_date": "test",
             "validity_end_date": "test",
             "validity_start_date_display": "test",
