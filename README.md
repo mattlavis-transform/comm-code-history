@@ -16,3 +16,8 @@ Flassk API to show deprecated APIs
 - To run
 
   `python3 api.py`
+
+
+- Test remotely
+
+  `https://comm-code-history.herokuapp.com/`
