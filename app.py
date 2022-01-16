@@ -2,6 +2,7 @@
 from flask import Flask, request, jsonify
 import os
 from classes.commodity import Commodity
+from classes.commodity2 import Commodity2
 from classes.sqlite_helper import DatabaseLite
 
 
@@ -12,12 +13,16 @@ app = Flask(__name__)
 def index():
     return "<h1>Welcome to our server !!</h1>"
 
-# @app.route('/commodities', methods=['GET'])
-@app.route('/commodities')
+@app.route('/commodities', methods=['GET'])
 def get_commodity():
-    # commodity_code = request.args.get('c')
-    commodity_code = "0702000007"
+    commodity_code = request.args.get('c')
     c = Commodity(commodity_code)
+    return c.data
+
+@app.route('/commodities2', methods=['GET'])
+def get_commodity2():
+    commodity_code = request.args.get('c')
+    c = Commodity2(commodity_code)
     return c.data
 
 @app.route('/sqlite3')
