@@ -15,7 +15,7 @@ class Commodity2(object):
     
         instance = {
             "sid": 1,
-            "goods_nomenclature_item_id": self.commodity_code,
+            "goods_nomenclature_item_id": "0702000007",
             "validity_start_date": "test",
             "validity_end_date": "test",
             "validity_start_date_display": "test",
