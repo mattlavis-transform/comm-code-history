@@ -5,8 +5,8 @@ import os
 
 
 class Commodity2(object):
-    def __init__(self, commodity_code):
-        self.commodity_code = commodity_code
+    def __init__(self):
+        # self.commodity_code = commodity_code
         self.get_date_sql_lite()
 
     def get_date_sql_lite(self):

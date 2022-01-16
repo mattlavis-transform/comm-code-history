@@ -21,9 +21,8 @@ def get_commodity():
 
 @app.route('/commodities2', methods=['GET'])
 def get_commodity2():
-    commodity_code = "0702000007"
     # commodity_code = request.args.get('c')
-    c = Commodity2(commodity_code)
+    c = Commodity2()
     return c.data
 
 @app.route('/sqlite3')
