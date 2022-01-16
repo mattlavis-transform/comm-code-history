@@ -6,23 +6,32 @@ import os
 
 class Commodity2(object):
     def __init__(self):
-        # self.commodity_code = commodity_code
+        self.commodity_code = "0702000007"
+        a = 1
         self.get_date_sql_lite()
-
+        pass
+    
     def get_date_sql_lite(self):
         self.data = {}
         self.instances = []
-    
-        instance = {
-            "sid": 1,
-            "goods_nomenclature_item_id": "0702000007",
-            "validity_start_date": "test",
-            "validity_end_date": "test",
-            "validity_start_date_display": "test",
-            "validity_end_date_display": "test"
-        }
-        self.instances.append(instance)
-            
+        database_filename = os.path.join(os.getcwd(), "db", "commodity-code-history.db")
+        db = DatabaseLite(database_filename)
+        sql = """select goods_nomenclature_sid, goods_nomenclature_item_id, validity_start_date, validity_end_date 
+        from goods_nomenclatures
+        where goods_nomenclature_item_id = '""" + self.commodity_code + """'
+        order by validity_start_date desc;
+        """
+        rows = db.run_query(sql)
+        for row in rows:
+            instance = {
+                "sid": row[0],
+                "goods_nomenclature_item_id": row[1],
+                "validity_start_date": self.to_yyyymmdd(row[2]),
+                "validity_end_date": self.to_yyyymmdd(row[3]),
+                "validity_start_date_display": self.to_display(row[2]),
+                "validity_end_date_display": self.to_display(row[3])
+            }
+            self.instances.append(instance)
         self.data["data"] = self.instances
 
     def to_yyyymmdd(self, s):
