@@ -1,6 +1,35 @@
 # app.py
 from flask import Flask, request, jsonify
+import os
+from classes.commodity import Commodity
+from classes.sqlite_helper import DatabaseLite
+
+
 app = Flask(__name__)
+
+# A welcome message to test our server
+@app.route('/')
+def index():
+    return "<h1>Welcome to our server !!</h1>"
+
+@app.route('/commodity', methods=['GET'])
+def get_commodity():
+    commodity_code = request.args.get('c')
+    c = Commodity(commodity_code)
+    return c.data
+    # return "<h1>Getting a commodity " + commodity_code + " </p>"
+
+# Test SQLLite3
+@app.route('/sqlite3')
+def sqlite3():
+    database_filename = os.path.join(os.getcwd(), "db", "commodity-code-history.db")
+    db = DatabaseLite(database_filename)
+    sql = "select * from goods_nomenclatures limit 10;"
+    rows = db.run_query(sql)
+
+    return "<h1>SQLite</h1>"
+
+
 
 @app.route('/getmsg/', methods=['GET'])
 def respond():
@@ -40,11 +69,6 @@ def post_something():
         return jsonify({
             "ERROR": "no name found, please send a name."
         })
-
-# A welcome message to test our server
-@app.route('/')
-def index():
-    return "<h1>Welcome to our server !!</h1>"
 
 if __name__ == '__main__':
     # Threaded option to enable multiple instances for multiple user access support
