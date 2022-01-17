@@ -40,8 +40,18 @@ def sqlite4():
     db = DatabaseLite(database_filename)
     sql = "select * from goods_nomenclatures limit 10;"
     rows = db.run_query(sql)
+    instance = {
+        "sid": 123,
+        "goods_nomenclature_item_id": "test",
+        "validity_start_date": "test",
+        "validity_end_date": "test",
+        "validity_start_date_display": "test",
+        "validity_end_date_display": "test"
+    }
+    data = {}
+    data["data"] = instance
 
-    return "<h1>SQLite 4</h1>"
+    return data
 
 # Test SQLLite3
 @app.route('/flaps')
