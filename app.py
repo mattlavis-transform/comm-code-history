@@ -41,6 +41,7 @@ def sqlite4():
     sql = "select * from goods_nomenclatures limit 10;"
     
     commodity_code = "0101291000"
+    commodity_code = request.args.get('c')
     sql = """select goods_nomenclature_sid, goods_nomenclature_item_id, validity_start_date, validity_end_date 
     from goods_nomenclatures
     where goods_nomenclature_item_id = '""" + commodity_code + """'
