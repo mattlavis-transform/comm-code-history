@@ -35,16 +35,10 @@ def to_display(s):
 def index():
     return "<h1>Welcome to our server !!</h1>"
 
-@app.route('/commodities', methods=['GET'])
+@app.route('/xcommodities', methods=['GET'])
 def get_commodity():
     commodity_code = request.args.get('c')
     c = Commodity(commodity_code)
-    return c.data
-
-@app.route('/commodities2', methods=['GET'])
-def get_commodity2():
-    # commodity_code = request.args.get('c')
-    c = Commodity2()
     return c.data
 
 @app.route('/sqlite3')
@@ -56,8 +50,8 @@ def sqlite3():
 
     return "<h1>SQLite</h1>"
 
-@app.route('/sqlite4')
-def sqlite4():
+@app.route('/commodities')
+def commodities_local():
     data = {}
     instances = []
     commodity_code = request.args.get('c')
