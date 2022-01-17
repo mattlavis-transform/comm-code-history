@@ -1,7 +1,7 @@
 # app.py
 from flask import Flask, request, jsonify
 import os
-import datetime
+from datetime import datetime
 from classes.commodity import Commodity
 from classes.commodity2 import Commodity2
 from classes.sqlite_helper import DatabaseLite
@@ -9,7 +9,7 @@ from classes.sqlite_helper import DatabaseLite
 
 app = Flask(__name__)
 
-def to_yyyymmdd(self, s):
+def to_yyyymmdd(s):
     if s is None:
         s = ""
     else:
@@ -19,7 +19,7 @@ def to_yyyymmdd(self, s):
         s = datetime.strftime(s, "%Y-%m-%d")
     return s
     
-def to_display(self, s):
+def to_display(s):
     if s is None:
         s = ""
     else:
