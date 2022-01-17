@@ -34,6 +34,15 @@ def sqlite3():
 
     return "<h1>SQLite</h1>"
 
+@app.route('/sqlite4')
+def sqlite4():
+    database_filename = os.path.join(os.getcwd(), "db", "commodity-code-history.db")
+    db = DatabaseLite(database_filename)
+    sql = "select * from goods_nomenclatures limit 10;"
+    rows = db.run_query(sql)
+
+    return "<h1>SQLite 4</h1>"
+
 # Test SQLLite3
 @app.route('/flaps')
 def flaps():
