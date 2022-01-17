@@ -39,6 +39,14 @@ def sqlite4():
     database_filename = os.path.join(os.getcwd(), "db", "commodity-code-history.db")
     db = DatabaseLite(database_filename)
     sql = "select * from goods_nomenclatures limit 10;"
+    
+    commodity_code = "0101291000"
+    sql = """select goods_nomenclature_sid, goods_nomenclature_item_id, validity_start_date, validity_end_date 
+    from goods_nomenclatures
+    where goods_nomenclature_item_id = '""" + commodity_code + """'
+    order by validity_start_date desc;
+    """
+        
     rows = db.run_query(sql)
     row = rows[0]
     instance = {
