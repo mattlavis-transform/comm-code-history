@@ -40,9 +40,10 @@ def sqlite4():
     db = DatabaseLite(database_filename)
     sql = "select * from goods_nomenclatures limit 10;"
     rows = db.run_query(sql)
+    row = rows[0]
     instance = {
         "sid": 123,
-        "goods_nomenclature_item_id": "test",
+        "goods_nomenclature_item_id": row[0],
         "validity_start_date": "test",
         "validity_end_date": "test",
         "validity_start_date_display": "test",
