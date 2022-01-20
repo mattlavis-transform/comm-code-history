@@ -81,7 +81,7 @@ def commodities_local():
     return data
 
 @app.route('/document-codes')
-def document_odes_local():
+def document_codes_local():
     # data = {}
     data = OrderedDict()
     instances = []
