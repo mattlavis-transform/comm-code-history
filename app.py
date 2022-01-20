@@ -2,6 +2,7 @@
 from flask import Flask, request, jsonify
 import os
 from datetime import datetime
+from collections import OrderedDict
 from classes.commodity import Commodity
 from classes.commodity2 import Commodity2
 from classes.sqlite_helper import DatabaseLite
@@ -74,6 +75,56 @@ def commodities_local():
             "validity_start_date_display": to_display(row[2]),
             "validity_end_date_display": to_display(row[3])
         }
+        instances.append(instance)
+    data["data"] = instances
+
+    return data
+
+@app.route('/document-codes')
+def document_odes_local():
+    # data = {}
+    data = OrderedDict()
+    instances = []
+    code = request.args.get('c')
+
+    database_filename = os.path.join(os.getcwd(), "db", "commodity-code-history.db")
+    db = DatabaseLite(database_filename)
+
+    if code is None:
+        sql = """
+        select code, description, certificate_type_code, certificate_code, validity_start_date
+        from certificates c order by code;
+        """
+    else:
+        sql = """
+        select code, description, certificate_type_code, certificate_code, validity_start_date
+        from certificates c where code = '""" + code + """' order by code 
+        """
+        
+    rows = db.run_query(sql)
+    for row in rows:
+        instance = OrderedDict()
+        attributes = OrderedDict()
+        
+        attributes["certificate_type_code"] = row[2]
+        attributes["certificate_code"] = row[3]
+        attributes["description"] = row[1]
+        attributes["validity_start_date"] = row[4]
+        
+        instance["id"] = row[0]
+        instance["type"] = "certificates"
+        instance["attributes"] = attributes
+        
+        # instance = {
+        #     "id": row[0],
+        #     "type": "certificates",
+        #     "attributes": {
+        #         "certificate_type_code": row[2],
+        #         "certificate_code": row[3],
+        #         "description": row[1],
+        #         "validity_start_date": to_display(row[4])
+        #     }
+        # }
         instances.append(instance)
     data["data"] = instances
 
