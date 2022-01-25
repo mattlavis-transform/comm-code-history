@@ -7,9 +7,11 @@ from classes.commodity import Commodity
 from classes.commodity2 import Commodity2
 from classes.sqlite_helper import DatabaseLite
 
+
 import globals as g
 
 app = Flask(__name__)
+app.config['JSON_SORT_KEYS'] = False
 
 def to_yyyymmdd(s):
     if s is None:
@@ -83,6 +85,13 @@ def commodities_local():
     data["data"] = instances
 
     return data
+
+
+@app.route('/measure_types')
+def measure_types():
+    measure_types = g.app.get_measure_types()
+    return measure_types
+
 
 @app.route('/document-codes')
 def document_codes_local():
