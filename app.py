@@ -7,6 +7,7 @@ from classes.commodity import Commodity
 from classes.commodity2 import Commodity2
 from classes.sqlite_helper import DatabaseLite
 
+import globals as g
 
 app = Flask(__name__)
 
@@ -34,7 +35,10 @@ def to_display(s):
 # A welcome message to test our server
 @app.route('/')
 def index():
-    return "<h1>Welcome to our server !!</h1>"
+    a = "Hello"
+    b = " you"
+    return g.do_append(a, b)
+    # return "<h1>Welcome to our server !!</h1>"
 
 @app.route('/xcommodities', methods=['GET'])
 def get_commodity():
