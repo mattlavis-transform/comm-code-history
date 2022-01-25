@@ -192,6 +192,64 @@ class Application(object):
 
         return data
 
+
+    def get_condition_codes(self):
+        data = {}
+        instances = []
+        db = DatabaseLite(self.database_filename)
+        sql = """
+        select * from measure_condition_codes order by 1;
+        """
+            
+        rows = db.run_query(sql)
+        for row in rows:
+            instance = {}
+            attributes = {}
+            
+            attributes["id"] = row[0]
+            attributes["validity_start_date"] = self.to_yyyymmdd(row[1])
+            attributes["validity_end_date"] = self.to_yyyymmdd(row[2])
+            attributes["description"] = row[3]
+
+            instance["id"] = row[0]
+            instance["type"] = "measure_condition_code"
+            instance["attributes"] = attributes
+            
+            instances.append(instance)
+        
+        data["data"] = instances
+
+        return data
+
+
+    def get_action_codes(self):
+        data = {}
+        instances = []
+        db = DatabaseLite(self.database_filename)
+        sql = """
+        select * from measure_actions order by 1;
+        """
+            
+        rows = db.run_query(sql)
+        for row in rows:
+            instance = {}
+            attributes = {}
+            
+            attributes["id"] = row[0]
+            attributes["validity_start_date"] = self.to_yyyymmdd(row[1])
+            attributes["validity_end_date"] = self.to_yyyymmdd(row[2])
+            attributes["description"] = row[3]
+
+            instance["id"] = row[0]
+            instance["type"] = "measure_action"
+            instance["attributes"] = attributes
+            
+            instances.append(instance)
+        
+        data["data"] = instances
+
+        return data
+
     def to_yyyymmdd(self, s):
         if s is None:
             s = ""

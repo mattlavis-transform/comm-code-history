@@ -37,6 +37,18 @@ def get_quotas():
     return quotas
 
 
+@app.route('/condition-codes')
+def get_condition_codes():
+    condition_codes = g.app.get_condition_codes()
+    return condition_codes
+
+
+@app.route('/action-codes')
+def get_action_codes():
+    action_codes = g.app.get_action_codes()
+    return action_codes
+
+
 if __name__ == '__main__':
     # Threaded option to enable multiple instances for multiple user access support
     app.run(threaded=True, port=5000)
