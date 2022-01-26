@@ -31,6 +31,12 @@ def get_document_codes():
     return document_codes
 
 
+@app.route('/certificate_codes')
+def get_certificate_codes():
+    document_codes = g.app.get_document_codes()
+    return document_codes
+
+
 @app.route('/quotas')
 def get_quotas():
     quotas = g.app.get_quotas()
