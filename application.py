@@ -45,13 +45,15 @@ class Application(object):
 
         if code is None:
             sql = """
-            select code, description, certificate_type_code, certificate_code, validity_start_date
-            from certificates c order by code;
+            select code, certificate_type_code, certificate_code, validity_start_date,
+            certificate_description, certificate_type_description
+            from document_codes dc order by code;
             """
         else:
             sql = """
-            select code, description, certificate_type_code, certificate_code, validity_start_date
-            from certificates c where code = '""" + code + """' order by code 
+            select code, certificate_type_code, certificate_code, validity_start_date,
+            certificate_description, certificate_type_description
+            from document_codes dc where code = '""" + code + """' order by code 
             """
             
         rows = db.run_query(sql)
@@ -59,10 +61,11 @@ class Application(object):
             instance = {}
             attributes = {}
             
-            attributes["certificate_type_code"] = row[2]
-            attributes["certificate_code"] = row[3]
-            attributes["description"] = row[1]
-            attributes["validity_start_date"] = row[4]
+            attributes["certificate_type_code"] = row[1]
+            attributes["certificate_code"] = row[2]
+            attributes["validity_start_date"] = row[3]
+            attributes["certificate_description"] = row[4]
+            attributes["certificate_type_description"] = row[5]
             
             instance["id"] = row[0]
             instance["type"] = "document_code"
