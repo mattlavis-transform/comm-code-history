@@ -15,7 +15,7 @@ Flassk API to show deprecated APIs
   
 - To run
 
-  `python3 api.py`
+  `python3 app.py`
 
 
 - Test remotely

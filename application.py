@@ -143,7 +143,7 @@ class Application(object):
         attributes["measurement_unit_code"] = row[8]
         attributes["measurement_unit_qualifier_code"] = row[9]
         attributes["maximum_precision"] = row[10]
-        attributes["critical_state"] = row[11]
+        # attributes["critical_state"] = row[11]
         attributes["critical_threshold"] = row[12]
         relationship["attributes"] = attributes
         return relationship
