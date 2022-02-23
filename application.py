@@ -1,8 +1,10 @@
 import os
 from datetime import datetime
+from posixpath import split
 from flask import Flask, request, jsonify
-from markupsafe import re
 from classes.sqlite_helper import DatabaseLite
+from commodity import Commodity
+from measure import Measure
 
 
 class Application(object):
@@ -272,3 +274,7 @@ class Application(object):
 
             s = datetime.strftime(s, "%d %B %Y")
         return s
+
+    def get_commodity(self, goods_nomenclature_item_id):
+        commodity = Commodity(goods_nomenclature_item_id)
+        return commodity.as_dict()

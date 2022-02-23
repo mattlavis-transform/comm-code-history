@@ -1,0 +1,200 @@
+{
+	"ASV": {
+		"abbreviation": "% vol"
+	},
+	"ASVX": {
+		"abbreviation": "% vol/hl"
+	},
+	"CCT": {
+		"abbreviation": "ct/l"
+	},
+	"CEN": {
+		"abbreviation": "100 p/st"
+	},
+	"CTM": {
+		"abbreviation": "c/k"
+	},
+	"DAP": {
+		"abbreviation": "10 000 kg/polar"
+	},
+	"DHS": {
+		"abbreviation": "kg DHS"
+	},
+	"DTN": {
+		"abbreviation": "100 kg"
+	},
+	"DTNE": {
+		"abbreviation": "100 kg/net eda"
+	},
+	"DTNF": {
+		"abbreviation": "100 kg common wheat"
+	},
+	"DTNG": {
+		"abbreviation": "100 kg/br"
+	},
+	"DTNL": {
+		"abbreviation": "100 kg live weight"
+	},
+	"DTNM": {
+		"abbreviation": "100 kg/net mas"
+	},
+	"DTNR": {
+		"abbreviation": "100 kg std qual"
+	},
+	"DTNS": {
+		"abbreviation": "100 kg raw sugar"
+	},
+	"DTNZ": {
+		"abbreviation": "100 kg/net/%sacchar."
+	},
+	"EUR": {
+		"abbreviation": "EUR"
+	},
+	"GFI": {
+		"abbreviation": "gi F/S"
+	},
+	"GRM": {
+		"abbreviation": "g"
+	},
+	"GRT": {
+		"abbreviation": "GT"
+	},
+	"HLT": {
+		"abbreviation": "hl"
+	},
+	"HMT": {
+		"abbreviation": "100 m"
+	},
+	"KCC": {
+		"abbreviation": "kg C₅H₁₄ClNO"
+	},
+	"KCL": {
+		"abbreviation": "tonne KCl"
+	},
+	"KGM": {
+		"abbreviation": "kg"
+	},
+	"KGMA": {
+		"abbreviation": "kg/tot/alc"
+	},
+	"KGME": {
+		"abbreviation": "kg/net eda"
+	},
+	"KGMG": {
+		"abbreviation": "GKG"
+	},
+	"KGMP": {
+		"abbreviation": "kg/lactic matter"
+	},
+	"KGMS": {
+		"abbreviation": "kg/raw sugar"
+	},
+	"KGMT": {
+		"abbreviation": "kg/dry lactic matter"
+	},
+	"KLT": {
+		"abbreviation": "1000 l"
+	},
+	"KMA": {
+		"abbreviation": "kg methylamines"
+	},
+	"KMT": {
+		"abbreviation": "KM"
+	},
+	"KNI": {
+		"abbreviation": "kg N"
+	},
+	"KNS": {
+		"abbreviation": "kg H₂O₂"
+	},
+	"KPH": {
+		"abbreviation": "kg KOH"
+	},
+	"KPO": {
+		"abbreviation": "kg K₂O"
+	},
+	"KPP": {
+		"abbreviation": "kg P₂O₅"
+	},
+	"KSD": {
+		"abbreviation": "kg 90% sdt"
+	},
+	"KSH": {
+		"abbreviation": "kg NaOH"
+	},
+	"KUR": {
+		"abbreviation": "kg U"
+	},
+	"LPA": {
+		"abbreviation": "l alc. 100%"
+	},
+	"LTR": {
+		"abbreviation": "l"
+	},
+	"LTRA": {
+		"abbreviation": "L total alc."
+	},
+	"MIL": {
+		"abbreviation": "1000 p/st"
+	},
+	"MPR": {
+		"abbreviation": "1000 pa"
+	},
+	"MTK": {
+		"abbreviation": "m²"
+	},
+	"MTQ": {
+		"abbreviation": "m³"
+	},
+	"MTQC": {
+		"abbreviation": "1000 m³"
+	},
+	"MTR": {
+		"abbreviation": "m"
+	},
+	"MWH": {
+		"abbreviation": "1000 kWh"
+	},
+	"NAR": {
+		"abbreviation": "p/st"
+	},
+	"NARB": {
+		"abbreviation": "b/f"
+	},
+	"NCL": {
+		"abbreviation": "ce/el"
+	},
+	"NPR": {
+		"abbreviation": "pa"
+	},
+	"TJO": {
+		"abbreviation": "TJ"
+	},
+	"TNE": {
+		"abbreviation": "1000 kg"
+	},
+	"TNEE": {
+		"abbreviation": "1000 kg/net eda"
+	},
+	"TNEI": {
+		"abbreviation": "1000 kg/biodiesel"
+	},
+	"TNEJ": {
+		"abbreviation": "1000 kg/fuel content"
+	},
+	"TNEK": {
+		"abbreviation": "1000 kg/bioethanol"
+	},
+	"TNEM": {
+		"abbreviation": "1000 kg/net mas"
+	},
+	"TNER": {
+		"abbreviation": "1000 kg std qual"
+	},
+	"TNEZ": {
+		"abbreviation": "1000 kg/net/%saccha."
+	},
+	"WAT": {
+		"abbreviation": "Watt"
+	}
+}

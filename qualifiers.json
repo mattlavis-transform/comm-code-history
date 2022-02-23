@@ -1,0 +1,62 @@
+{
+	"A": {
+		"description": "Total alcohol"
+	},
+	"B": {
+		"description": "per flask"
+	},
+	"C": {
+		"description": "1 000"
+	},
+	"D": {
+		"description": "Per 1% by weight of sucrose or extractable sugar"
+	},
+	"E": {
+		"description": "net of drained weight"
+	},
+	"F": {
+		"description": "of common wheat"
+	},
+	"G": {
+		"description": "Gross"
+	},
+	"H": {
+		"description": "Hydrogen peroxide (H2O2)"
+	},
+	"I": {
+		"description": "of biodiesel content"
+	},
+	"J": {
+		"description": "of fuel content (usually in form of tallow, stearin, paraffin wax or other waxes, including the wick)"
+	},
+	"K": {
+		"description": "of bioethanol content"
+	},
+	"L": {
+		"description": "of live weight"
+	},
+	"M": {
+		"description": "net of dry matter"
+	},
+	"N": {
+		"description": "Net"
+	},
+	"P": {
+		"description": "of lactic matter"
+	},
+	"R": {
+		"description": "of the standard quality"
+	},
+	"S": {
+		"description": "of sugar with a yield in white sugar of 92%"
+	},
+	"T": {
+		"description": "of dry lactic matter"
+	},
+	"X": {
+		"description": "Hectolitre"
+	},
+	"Z": {
+		"description": "per 1% by weight of sucrose"
+	}
+}

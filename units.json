@@ -1,0 +1,152 @@
+{
+	"ASV": {
+		"description": "%vol"
+	},
+	"CCT": {
+		"description": "Carrying capacity in metric tonnes"
+	},
+	"CEN": {
+		"description": "Hundred items"
+	},
+	"CTM": {
+		"description": "Carats (one metric carat = 2 x 10<sup>-4</sup>kg)"
+	},
+	"DAP": {
+		"description": "Decatonne, corrected according to polarisation"
+	},
+	"DHS": {
+		"description": "Kilogram of dihydrostreptomycin"
+	},
+	"DTN": {
+		"description": "Hectokilogram"
+	},
+	"EUR": {
+		"description": "Euro (used for statistical surveillance)"
+	},
+	"FC1": {
+		"description": "Factor"
+	},
+	"GFI": {
+		"description": "Gram of fissile isotopes"
+	},
+	"GP1": {
+		"description": "Gross Production"
+	},
+	"GRM": {
+		"description": "Gram"
+	},
+	"GRT": {
+		"description": "Gross tonnage"
+	},
+	"HLT": {
+		"description": "Hectolitre"
+	},
+	"HMT": {
+		"description": "Hectometre"
+	},
+	"KAC": {
+		"description": "Kilogram net of acesulfame potassium"
+	},
+	"KCC": {
+		"description": "Kilogram of choline chloride"
+	},
+	"KCL": {
+		"description": "Tonne of potassium chloride"
+	},
+	"KGM": {
+		"description": "Kilogram"
+	},
+	"KLT": {
+		"description": "1000 litres"
+	},
+	"KMA": {
+		"description": "Kilogram of methylamines"
+	},
+	"KMT": {
+		"description": "Kilometre"
+	},
+	"KNI": {
+		"description": "Kilogram of nitrogen"
+	},
+	"KNS": {
+		"description": "Kilogram of hydrogen peroxide"
+	},
+	"KPH": {
+		"description": "Kilogram of potassium hydroxide (caustic potash)"
+	},
+	"KPO": {
+		"description": "Kilogram of potassium oxide"
+	},
+	"KPP": {
+		"description": "Kilogram of diphosphorus pentaoxide"
+	},
+	"KSD": {
+		"description": "Kilogram of substance 90 % dry"
+	},
+	"KSH": {
+		"description": "Kilogram of sodium hydroxide (caustic soda)"
+	},
+	"KUR": {
+		"description": "Kilogram of uranium"
+	},
+	"KW1": {
+		"description": "Kilowatt Hour"
+	},
+	"LPA": {
+		"description": "Litre pure (100%) alcohol"
+	},
+	"LTR": {
+		"description": "Litre"
+	},
+	"MCG": {
+		"description": "Microgram"
+	},
+	"MCL": {
+		"description": "Microlitre"
+	},
+	"MGM": {
+		"description": "Milligram"
+	},
+	"MIL": {
+		"description": "1000 items"
+	},
+	"MLT": {
+		"description": "Millilitre"
+	},
+	"MPR": {
+		"description": "1000 pairs (used for statistical surveillance)"
+	},
+	"MTK": {
+		"description": "Square metre"
+	},
+	"MTQ": {
+		"description": "Cubic meter"
+	},
+	"MTR": {
+		"description": "Metre"
+	},
+	"MWH": {
+		"description": "1000 kilowatt hours"
+	},
+	"NAR": {
+		"description": "Number of items"
+	},
+	"NCL": {
+		"description": "Number of cells"
+	},
+	"NPR": {
+		"description": "Number of pairs"
+	},
+	"RET": {
+		"description": "Retail Price"
+	},
+	"TJO": {
+		"description": "Terajoule (gross calorific value)"
+	},
+	"TNE": {
+		"description": "Tonne"
+	},
+	"WAT": {
+		"description": "Number of Watt"
+	}
+}

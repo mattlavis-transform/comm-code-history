@@ -55,6 +55,13 @@ def get_action_codes():
     return action_codes
 
 
+@app.route('/commodities/<goods_nomenclature_item_id>')
+def get_commodity(goods_nomenclature_item_id):
+    # return "The product is " + str(goods_nomenclature_item_id)
+    commodity = g.app.get_commodity(goods_nomenclature_item_id)
+    return commodity
+
+
 if __name__ == '__main__':
     # Threaded option to enable multiple instances for multiple user access support
     app.run(threaded=True, port=5000)
