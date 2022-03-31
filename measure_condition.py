@@ -1,4 +1,6 @@
 import os
+import json
+import jmespath
 from strings import Strings
 
 
@@ -7,13 +9,35 @@ class MeasureCondition(object):
         self.strings = Strings()
         self.instance_count = 1
         self.condition_class_priority = 0
+        self.guidance_cds = None
+        self.guidance_chief = None
+        self.status_codes_cds = None
     
     def populate(self):
         self.get_positive_negative()
         self.get_document_code()
         self.get_requirement()
         self.get_class()
+        self.get_5a5a_content()
         
+    def get_5a5a_content(self):
+        if self.document_code == "9120":
+            a = 1
+        if self.document_code is None:
+            return
+        else:
+            path = os.path.join(os.getcwd(), "chief_cds_guidance.json")
+            f = open(path)
+            data = json.load(f)
+            query = "document_codes[?code == '" + self.document_code + "']"
+            results = jmespath.search(query, data)
+            if len(results) > 0:
+                result = results[0]
+                self.guidance_cds = result["guidance_cds"]
+                self.guidance_chief = result["guidance_chief"]
+                self.status_codes_cds = result["status_codes_cds"]
+            pass
+    
     def get_class(self):
         exemptions = [
             "999L",
@@ -93,11 +117,14 @@ class MeasureCondition(object):
                 "duty_expression": "tbc",
                 "monetary_unit_abbreviation": "tbc",
                 "requirement": self.requirement,
-                "condition_class": self.condition_class
+                "condition_class": self.condition_class,
+                "guidance_cds": self.guidance_cds,
+                "guidance_chief": self.guidance_chief,
+                "status_codes_cds": self.status_codes_cds
             }
         }
         return ret
-    
+
     def id_as_dict(self):
         ret = {
             "id": self.measure_condition_sid,

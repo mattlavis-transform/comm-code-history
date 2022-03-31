@@ -34,7 +34,7 @@ class Commodity(object):
             self.check_for_universal_waiver()
             self.get_condition_permutations()
             self.get_measures_dict()
-            
+
     def check_for_universal_waiver(self):
         for m in self.measures:
             for mc in m.measure_conditions:
@@ -221,7 +221,7 @@ class Commodity(object):
                 "consigned_from": None,
                 "basid_duty_rate": "tbc",
                 "meursing_code": False,
-                "declarable": False,
+                "declarable": False
             },
             "relationships": {
                 "tbc": "tbc"
