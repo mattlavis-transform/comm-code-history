@@ -1,4 +1,5 @@
 import os
+import json
 from datetime import datetime
 from posixpath import split
 from flask import Flask, request, jsonify
@@ -36,6 +37,12 @@ class Application(object):
             instances.append(instance)
         data["data"] = instances
 
+        return data
+    
+    def get_guidance(self):
+        path = os.path.join(os.getcwd(), "chief_cds_guidance.json")
+        f = open(path)
+        data = json.load(f)
         return data
 
     def get_document_codes(self):

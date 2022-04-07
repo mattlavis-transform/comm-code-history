@@ -18,6 +18,11 @@ def get_commodity_history():
     commodity_history = g.app.get_commodity_history()
     return commodity_history
 
+@app.route('/guidance')
+def get_guidance():
+    guidance = g.app.get_guidance()
+    return guidance
+
 
 @app.route('/measure-types')
 def get_measure_types():

@@ -21,8 +21,6 @@ class MeasureCondition(object):
         self.get_5a5a_content()
         
     def get_5a5a_content(self):
-        if self.document_code == "9120":
-            a = 1
         if self.document_code is None:
             return
         else:
