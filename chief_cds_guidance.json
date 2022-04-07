@@ -1,24 +1,6 @@
 {
     "document_codes": [
         {
-            "code": "9120",
-            "direction": "Import",
-            "description": "Importation of animal pathogens Licence under the Importation of Animal pathogens Order 1980 (IAPO).",
-            "guidance_cds": "- Enter GBAHC followed by the licence number.\n\n- If using more than one licence, then a separate 9120 entry in DE 2/3 is required for each licence.\n\n- Use one of the following [document status codes](https://www.gov.uk/government/publications/uk-trade-tariff-document-status-codes-for-harmonised-declarations/uk-trade-tariff-document-status-codes-for-harmonised-declarations): AC, AE, AF, AG, AP, AS, AT, XX",
-            "guidance_chief": "- Use one of the [status codes](https://www.gov.uk/government/publications/uk-trade-tariff-document-status-codes-for-harmonised-declarations/uk-trade-tariff-document-status-codes-for-harmonised-declarations) AC, AE, AF, AG, AP, AS, AT, XX.\n\n",
-            "status_codes_cds": [
-                "AC",
-                "AE",
-                "AF",
-                "AG",
-                "AP",
-                "AS",
-                "AT",
-                "XX"
-            ],
-            "used": "Yes"
-        },
-        {
             "code": "A001",
             "direction": "I",
             "description": "Certificate of authenticity fresh 'EMPEROR' table grapes. EC regulation 1832/2002 amending Annex 1 to Council regulation 2658/87 on the tariff and statistical nomenclature and on the Common Customs Tariff.",
@@ -92,7 +74,7 @@
                 "US",
                 "XB"
             ],
-            "used": "No"
+            "used": "Yes"
         },
         {
             "code": "A009",
@@ -119,7 +101,7 @@
                 "US",
                 "XB"
             ],
-            "used": "No"
+            "used": "Yes"
         },
         {
             "code": "A010",
@@ -146,7 +128,7 @@
                 "US",
                 "XB"
             ],
-            "used": "No"
+            "used": "Yes"
         },
         {
             "code": "A014",
@@ -173,7 +155,7 @@
                 "US",
                 "XB"
             ],
-            "used": "No"
+            "used": "Yes"
         },
         {
             "code": "A015",
@@ -200,7 +182,33 @@
                 "US",
                 "XB"
             ],
-            "used": "No"
+            "used": "Yes"
+        },
+        {
+            "code": "A016",
+            "direction": "I",
+            "description": "Certificate of authenticity Beef and Veal - Thin skirt",
+            "guidance_cds": "- Enter the reference number of the Certificate of authenticity for Beef and Veal - Thin skirt.\n\n- Where a sequentially numbered range of certificates covers the goods, enter the lowest to the highest reference numbers of the certificates concerned, e.g. document code + 0054037-0054047: status code. \n\n- Where certificates are not sequentially numbered, enter the reference number of each certificate concerned.\n\n- Use one of the following [document status codes](https://www.gov.uk/government/publications/uk-trade-tariff-document-status-codes-for-harmonised-declarations/uk-trade-tariff-document-status-codes-for-harmonised-declarations): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US",
+            "guidance_chief": "",
+            "status_codes_cds": [
+                "AE",
+                "AF",
+                "AG",
+                "AP",
+                "AS",
+                "AT",
+                "GE",
+                "GP",
+                "JE",
+                "JP",
+                "LE",
+                "LP",
+                "UA",
+                "UE",
+                "UP",
+                "US"
+            ],
+            "used": "Yes"
         },
         {
             "code": "A017",
@@ -305,7 +313,7 @@
                 "UP",
                 "US"
             ],
-            "used": "No"
+            "used": "Yes"
         },
         {
             "code": "A030",
@@ -353,7 +361,7 @@
                 "US",
                 "XB"
             ],
-            "used": "No"
+            "used": "Yes"
         },
         {
             "code": "C008",
@@ -379,7 +387,7 @@
                 "UP",
                 "US"
             ],
-            "used": "No"
+            "used": "Yes"
         },
         {
             "code": "C012",
@@ -617,7 +625,7 @@
                 "XW",
                 "XX"
             ],
-            "used": "No"
+            "used": "Yes"
         },
         {
             "code": "C027",
@@ -652,7 +660,7 @@
                 "XW",
                 "XX"
             ],
-            "used": "No"
+            "used": "Yes"
         },
         {
             "code": "C034",
@@ -1408,6 +1416,37 @@
                 "US",
                 "XA",
                 "XB"
+            ],
+            "used": "Yes"
+        },
+        {
+            "code": "C083",
+            "direction": "I",
+            "description": "Self-certificate for wine imported from the United Kingdom into the European Union (TCA Agreement - Appendix 15-C)",
+            "guidance_cds": "- Enter the reference number of the self-certificate document.\n\n- Where a sequentially numbered range of certificates covers the goods, enter the lowest to the highest reference numbers of the certificates concerned, e.g. document code + 0054037-0054047: status code.\n\n- Where certificates are not sequentially numbered, enter the reference number of each certificate concerned.\n\n- Use one of the following [document status codes](https://www.gov.uk/government/publications/uk-trade-tariff-document-status-codes-for-harmonised-declarations/uk-trade-tariff-document-status-codes-for-harmonised-declarations): AC, AE, AF, AG, AP, AS, AT, GE, GP, IA, IE, IP, IS, JA, JE, JP, JS, LE, LP, SP, TP",
+            "guidance_chief": "",
+            "status_codes_cds": [
+                "AC",
+                "AE",
+                "AF",
+                "AG",
+                "AP",
+                "AS",
+                "AT",
+                "GE",
+                "GP",
+                "IA",
+                "IE",
+                "IP",
+                "IS",
+                "JA",
+                "JE",
+                "JP",
+                "JS",
+                "LE",
+                "LP",
+                "SP",
+                "TP"
             ],
             "used": "Yes"
         },
@@ -2193,7 +2232,7 @@
                 "US",
                 "XB"
             ],
-            "used": "No"
+            "used": "Yes"
         },
         {
             "code": "C624",
@@ -3440,7 +3479,7 @@
                 "LP",
                 "UE"
             ],
-            "used": "No"
+            "used": "Yes"
         },
         {
             "code": "E020",
@@ -3615,7 +3654,7 @@
                 "XW",
                 "XX"
             ],
-            "used": "No"
+            "used": "Yes"
         },
         {
             "code": "L082",
@@ -3651,7 +3690,7 @@
                 "XW",
                 "XX"
             ],
-            "used": "No"
+            "used": "Yes"
         },
         {
             "code": "L100",
@@ -4806,7 +4845,7 @@
                 "US",
                 "XB"
             ],
-            "used": "No"
+            "used": "Yes"
         },
         {
             "code": "U062",
@@ -4830,7 +4869,7 @@
                 "UP",
                 "US"
             ],
-            "used": "No"
+            "used": "Yes"
         },
         {
             "code": "U063",
@@ -4879,7 +4918,7 @@
                 "UP",
                 "US"
             ],
-            "used": "No"
+            "used": "Yes"
         },
         {
             "code": "U068",
@@ -4903,7 +4942,7 @@
                 "UP",
                 "US"
             ],
-            "used": "No"
+            "used": "Yes"
         },
         {
             "code": "U069",
@@ -4927,7 +4966,7 @@
                 "UP",
                 "US"
             ],
-            "used": "No"
+            "used": "Yes"
         },
         {
             "code": "U071",
@@ -5023,6 +5062,82 @@
                 "AT",
                 "GE",
                 "GP",
+                "LE",
+                "LP",
+                "UA",
+                "UE",
+                "UP",
+                "US"
+            ],
+            "used": "Yes"
+        },
+        {
+            "code": "U075",
+            "direction": "I",
+            "description": "Movement certificate EUR. 1 (under the condition that in box 7 the remark 'Transitional Rules' is inserted) in the context of the Pan-Euro-Mediterranean transitional rules of origin",
+            "guidance_cds": "- Enter the reference number of the Certificate. \n\n- Where a sequentially numbered range of certificates covers the goods, enter the lowest to the highest reference numbers of the certificates concerned, e.g. document code + 0054037-0054047: status code. \n\n- Where certificates are not sequentially numbered, enter the reference number of each certificate concerned.\n\n- Use one of the following [document status codes](https://www.gov.uk/government/publications/uk-trade-tariff-document-status-codes-for-harmonised-declarations/uk-trade-tariff-document-status-codes-for-harmonised-declarations): AE, AF, AG, AP, AS, AT, GE, GP, LE, LP, UA, UE, UP, US",
+            "guidance_chief": "",
+            "status_codes_cds": [
+                "AE",
+                "AF",
+                "AG",
+                "AP",
+                "AS",
+                "AT",
+                "GE",
+                "GP",
+                "LE",
+                "LP",
+                "UA",
+                "UE",
+                "UP",
+                "US"
+            ],
+            "used": "No"
+        },
+        {
+            "code": "U076",
+            "direction": "I",
+            "description": "Origin declaration (under the condition that the declaration mentions 'origin according to the transitional rules') in the context of the Pan-Euro-Mediterranean transitional rules of origin",
+            "guidance_cds": "- Enter the reference number of the Origin declaration. \n\n- Where a sequentially numbered range of declarations cover the goods enter the lowest to the highest reference numbers of the declarations concerned i.e. document code + 0054037-0054047: status code. \n\n- Where declarations are not sequentially numbered enter the reference number of each declaration concerned.\n\n- Use one of the following [document status codes](https://www.gov.uk/government/publications/uk-trade-tariff-document-status-codes-for-harmonised-declarations/uk-trade-tariff-document-status-codes-for-harmonised-declarations): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US",
+            "guidance_chief": "",
+            "status_codes_cds": [
+                "AE",
+                "AF",
+                "AG",
+                "AP",
+                "AS",
+                "AT",
+                "GE",
+                "GP",
+                "JE",
+                "JP",
+                "LE",
+                "LP",
+                "UA",
+                "UE",
+                "UP",
+                "US"
+            ],
+            "used": "No"
+        },
+        {
+            "code": "U077",
+            "direction": "I",
+            "description": "Any alternative evidence in the context of the Pan-Euro-Mediterranean transitional rules of origin needed to prove the origin of the products if operators are not able to provide the certificate of origin",
+            "guidance_cds": "- Enter 'Alternative evidence'\n\n- Use one of the following [document status codes](https://www.gov.uk/government/publications/uk-trade-tariff-document-status-codes-for-harmonised-declarations/uk-trade-tariff-document-status-codes-for-harmonised-declarations): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US",
+            "guidance_chief": "",
+            "status_codes_cds": [
+                "AE",
+                "AF",
+                "AG",
+                "AP",
+                "AS",
+                "AT",
+                "GE",
+                "GP",
+                "JE",
+                "JP",
                 "LE",
                 "LP",
                 "UA",
@@ -5390,6 +5505,113 @@
             "used": "No"
         },
         {
+            "code": "U116",
+            "direction": "I",
+            "description": "Statement on Origin (Article ORIG.19 of the EU-UK TCA)",
+            "guidance_cds": "- Enter the reference number of the commercial document. \n\n- Where a sequentially numbered range of documents covers the goods, enter the lowest to the highest reference numbers of the documents concerned, e.g. document code + 0054037-0054047: status code. \n\n- Where documents are not sequentially numbered enter the reference number of each document concerned.\n\n- Use one of the following [document status codes](https://www.gov.uk/government/publications/uk-trade-tariff-document-status-codes-for-harmonised-declarations/uk-trade-tariff-document-status-codes-for-harmonised-declarations): AE, AF, AG, AP, AS, AT, GE, GP, HP, JE, JP, LE, LP, UA, UE, UP, US",
+            "guidance_chief": "",
+            "status_codes_cds": [
+                "AE",
+                "AF",
+                "AG",
+                "AP",
+                "AS",
+                "AT",
+                "GE",
+                "GP",
+                "HP",
+                "JE",
+                "JP",
+                "LE",
+                "LP",
+                "UA",
+                "UE",
+                "UP",
+                "US"
+            ],
+            "used": "No"
+        },
+        {
+            "code": "U117",
+            "direction": "I",
+            "description": "Importer's knowledge (Article ORIG.21 of the EU-UK TCA)",
+            "guidance_cds": "- Enter 'Importer's knowledge'\n\n- Use one of the following [document status codes](https://www.gov.uk/government/publications/uk-trade-tariff-document-status-codes-for-harmonised-declarations/uk-trade-tariff-document-status-codes-for-harmonised-declarations): AE, AF, AG, AP, AS, AT, GE, GP, JE, JP, LE, LP, UA, UE, UP, US",
+            "guidance_chief": "",
+            "status_codes_cds": [
+                "AE",
+                "AF",
+                "AG",
+                "AP",
+                "AS",
+                "AT",
+                "GE",
+                "GP",
+                "JE",
+                "JP",
+                "LE",
+                "LP",
+                "UA",
+                "UE",
+                "UP",
+                "US"
+            ],
+            "used": "No"
+        },
+        {
+            "code": "U118",
+            "direction": "B",
+            "description": "Statement on Origin for multiple shipments of identical products (Article ORIG.19 of the EU-UK TCA)",
+            "guidance_cds": "- Enter the reference number of the commercial document. \n\n- Where a sequentially numbered range of documents covers the goods, enter the lowest to the highest reference numbers of the documents concerned i.e. document code + 0054037-0054047: status code. \n\n- Where documents are not sequentially numbered enter the reference number of each document concerned.\n\n- Use one of the following [document status codes](https://www.gov.uk/government/publications/uk-trade-tariff-document-status-codes-for-harmonised-declarations/uk-trade-tariff-document-status-codes-for-harmonised-declarations): AE, AF, AG, AP, AS, AT, GE, GP, HP, JE, JP, LE, LP, UA, UE, UP, US",
+            "guidance_chief": "",
+            "status_codes_cds": [
+                "AE",
+                "AF",
+                "AG",
+                "AP",
+                "AS",
+                "AT",
+                "GE",
+                "GP",
+                "HP",
+                "JE",
+                "JP",
+                "LE",
+                "LP",
+                "UA",
+                "UE",
+                "UP",
+                "US"
+            ],
+            "used": "No"
+        },
+        {
+            "code": "U119",
+            "direction": "I",
+            "description": "Statement on Origin ('Derogation - Commission Implementing Regulation (EU) 2021/966')",
+            "guidance_cds": "- Enter the reference number of the commercial document. \n\n- Where a sequentially numbered range of documents covers the goods, enter the lowest to the highest reference numbers of the documents concerned i.e. document code + 0054037-0054047: status code. \n\n- Where documents are not sequentially numbered enter the reference number of each document concerned.\n\n- Use one of the following [document status codes](https://www.gov.uk/government/publications/uk-trade-tariff-document-status-codes-for-harmonised-declarations/uk-trade-tariff-document-status-codes-for-harmonised-declarations): AE, AF, AG, AP, AS, AT, GE, GP, HP, JE, JP, LE, LP, UA, UE, UP, US",
+            "guidance_chief": "",
+            "status_codes_cds": [
+                "AE",
+                "AF",
+                "AG",
+                "AP",
+                "AS",
+                "AT",
+                "GE",
+                "GP",
+                "HP",
+                "JE",
+                "JP",
+                "LE",
+                "LP",
+                "UA",
+                "UE",
+                "UP",
+                "US"
+            ],
+            "used": "Yes"
+        },
+        {
             "code": "U161",
             "direction": "I",
             "description": "Invoice declaration or origin declaration made out by any exporter on an invoice or any other commercial document within the framework of GSP for a total value of originating products not exceeding &euro;6000, according to Art. 75 of Reg. 2015/2447.",
@@ -5717,7 +5939,7 @@
                 "US",
                 "XB"
             ],
-            "used": "No"
+            "used": "Yes"
         },
         {
             "code": "U177",
@@ -5742,7 +5964,7 @@
                 "US",
                 "XB"
             ],
-            "used": "No"
+            "used": "Yes"
         },
         {
             "code": "U500",
@@ -5872,6 +6094,347 @@
             "used": "Yes"
         },
         {
+            "code": "X060",
+            "direction": "E",
+            "description": "Individual Export Authorisation - Article 12(1)(a) of the Regulation (EU) 2021/821 of the European Parliament and of the Council",
+            "guidance_cds": "- Enter the nationality of the document (for UK use GB; for Union docs use EU) followed by: \n\n- For a Individual Export authorisation enter IEA followed by the reference number of the authorisation document\n\n- Use one of the following [document status codes](https://www.gov.uk/government/publications/uk-trade-tariff-document-status-codes-for-harmonised-declarations/uk-trade-tariff-document-status-codes-for-harmonised-declarations): AC, AE, AF, AP, AT, EA, EE, EP, ES, GE, GP, HP, IA, IP, JA, JP, LE, LP, SP, TP, UA",
+            "guidance_chief": "",
+            "status_codes_cds": [
+                "AC",
+                "AE",
+                "AF",
+                "AP",
+                "AT",
+                "EA",
+                "EE",
+                "EP",
+                "ES",
+                "GE",
+                "GP",
+                "HP",
+                "IA",
+                "IP",
+                "JA",
+                "JP",
+                "LE",
+                "LP",
+                "SP",
+                "TP",
+                "UA"
+            ],
+            "used": "Yes"
+        },
+        {
+            "code": "X061",
+            "direction": "E",
+            "description": "Union General Export Authorisation No EU001 - ANNEX II A - referred to in Article 12(1)(d) of the Regulation (EU) 2021/821 of the European Parliament and of the Council",
+            "guidance_cds": "- 'Enter the nationality of the document (for UK use GB; for Union docs use EU) followed by: \n\n- For a Union General Export authorisation enter GEA followed by the reference number of the general authorisation document'\n\n- Use one of the following [document status codes](https://www.gov.uk/government/publications/uk-trade-tariff-document-status-codes-for-harmonised-declarations/uk-trade-tariff-document-status-codes-for-harmonised-declarations): AC, AE, AF, AP, AT, EA, EE, EP, ES, GE, GP, HP, IA, IP, JA, JP, LE, LP, SP, TP, UA",
+            "guidance_chief": "",
+            "status_codes_cds": [
+                "AC",
+                "AE",
+                "AF",
+                "AP",
+                "AT",
+                "EA",
+                "EE",
+                "EP",
+                "ES",
+                "GE",
+                "GP",
+                "HP",
+                "IA",
+                "IP",
+                "JA",
+                "JP",
+                "LE",
+                "LP",
+                "SP",
+                "TP",
+                "UA"
+            ],
+            "used": "Yes"
+        },
+        {
+            "code": "X062",
+            "direction": "E",
+            "description": "Union General Export Authorisation No EU002 - ANNEX II B - referred to in Article 12(1)(d) of the Regulation (EU) 2021/821 of the European Parliament and of the Council",
+            "guidance_cds": "- 'Enter the nationality of the document (for UK use GB; for Union docs use EU) followed by: \n\n- For a Union General Export authorisation enter GEA followed by the reference number of the general authorisation document'\n\n- Use one of the following [document status codes](https://www.gov.uk/government/publications/uk-trade-tariff-document-status-codes-for-harmonised-declarations/uk-trade-tariff-document-status-codes-for-harmonised-declarations): AC, AE, AF, AP, AT, EA, EE, EP, ES, GE, GP, HP, IA, IP, JA, JP, LE, LP, SP, TP, UA",
+            "guidance_chief": "",
+            "status_codes_cds": [
+                "AC",
+                "AE",
+                "AF",
+                "AP",
+                "AT",
+                "EA",
+                "EE",
+                "EP",
+                "ES",
+                "GE",
+                "GP",
+                "HP",
+                "IA",
+                "IP",
+                "JA",
+                "JP",
+                "LE",
+                "LP",
+                "SP",
+                "TP",
+                "UA"
+            ],
+            "used": "Yes"
+        },
+        {
+            "code": "X063",
+            "direction": "E",
+            "description": "Union General Export Authorisation No EU003 - ANNEX II C - referred to in Article 12(1)(d) of the Regulation (EU) 2021/821 of the European Parliament and of the Council",
+            "guidance_cds": "- 'Enter the nationality of the document (for UK use GB; for Union docs use EU) followed by: \n\n- For a Union General Export authorisation enter GEA followed by the reference number of the general authorisation document'\n\n- Use one of the following [document status codes](https://www.gov.uk/government/publications/uk-trade-tariff-document-status-codes-for-harmonised-declarations/uk-trade-tariff-document-status-codes-for-harmonised-declarations): AC, AE, AF, AP, AT, EA, EE, EP, ES, GE, GP, HP, IA, IP, JA, JP, LE, LP, SP, TP, UA",
+            "guidance_chief": "",
+            "status_codes_cds": [
+                "AC",
+                "AE",
+                "AF",
+                "AP",
+                "AT",
+                "EA",
+                "EE",
+                "EP",
+                "ES",
+                "GE",
+                "GP",
+                "HP",
+                "IA",
+                "IP",
+                "JA",
+                "JP",
+                "LE",
+                "LP",
+                "SP",
+                "TP",
+                "UA"
+            ],
+            "used": "Yes"
+        },
+        {
+            "code": "X064",
+            "direction": "E",
+            "description": "Union General Export Authorisation No EU004 - ANNEX II D - referred to in Article 12(1)(d) of the Regulation (EU) 2021/821 of the European Parliament and of the Council",
+            "guidance_cds": "- 'Enter the nationality of the document (for UK use GB; for Union docs use EU) followed by: \n\n- For a Union General Export authorisation enter GEA followed by the reference number of the general authorisation document'\n\n- Use one of the following [document status codes](https://www.gov.uk/government/publications/uk-trade-tariff-document-status-codes-for-harmonised-declarations/uk-trade-tariff-document-status-codes-for-harmonised-declarations): AC, AE, AF, AP, AT, EA, EE, EP, ES, GE, GP, HP, IA, IP, JA, JP, LE, LP, SP, TP, UA",
+            "guidance_chief": "",
+            "status_codes_cds": [
+                "AC",
+                "AE",
+                "AF",
+                "AP",
+                "AT",
+                "EA",
+                "EE",
+                "EP",
+                "ES",
+                "GE",
+                "GP",
+                "HP",
+                "IA",
+                "IP",
+                "JA",
+                "JP",
+                "LE",
+                "LP",
+                "SP",
+                "TP",
+                "UA"
+            ],
+            "used": "Yes"
+        },
+        {
+            "code": "X065",
+            "direction": "E",
+            "description": "Union General Export Authorisation No EU005 - ANNEX II E - referred to in Article 12(1)(d) of the Regulation (EU) 2021/821 of the European Parliament and of the Council",
+            "guidance_cds": "- 'Enter the nationality of the document (for UK use GB; for Union docs use EU) followed by: \n\n- For a Union General Export authorisation enter GEA followed by the reference number of the general authorisation document'\n\n- Use one of the following [document status codes](https://www.gov.uk/government/publications/uk-trade-tariff-document-status-codes-for-harmonised-declarations/uk-trade-tariff-document-status-codes-for-harmonised-declarations): AC, AE, AF, AP, AT, EA, EE, EP, ES, GE, GP, HP, IA, IP, JA, JP, LE, LP, SP, TP, UA",
+            "guidance_chief": "",
+            "status_codes_cds": [
+                "AC",
+                "AE",
+                "AF",
+                "AP",
+                "AT",
+                "EA",
+                "EE",
+                "EP",
+                "ES",
+                "GE",
+                "GP",
+                "HP",
+                "IA",
+                "IP",
+                "JA",
+                "JP",
+                "LE",
+                "LP",
+                "SP",
+                "TP",
+                "UA"
+            ],
+            "used": "Yes"
+        },
+        {
+            "code": "X066",
+            "direction": "E",
+            "description": "Union General Export Authorisation No EU006 - ANNEX II F - referred to in Article 12(1)(d) of the Regulation (EU) 2021/821 of the European Parliament and of the Council",
+            "guidance_cds": "- Enter the nationality of the document (for UK use GB; for Union docs use EU) followed by: \n\n- For a Union General Export authorisation enter GEA followed by the reference number of the general authorisation document'\n\n- Use one of the following [document status codes](https://www.gov.uk/government/publications/uk-trade-tariff-document-status-codes-for-harmonised-declarations/uk-trade-tariff-document-status-codes-for-harmonised-declarations): AC, AE, AF, AP, AT, EA, EE, EP, ES, GE, GP, HP, IA, IP, JA, JP, LE, LP, SP, TP, UA",
+            "guidance_chief": "",
+            "status_codes_cds": [
+                "AC",
+                "AE",
+                "AF",
+                "AP",
+                "AT",
+                "EA",
+                "EE",
+                "EP",
+                "ES",
+                "GE",
+                "GP",
+                "HP",
+                "IA",
+                "IP",
+                "JA",
+                "JP",
+                "LE",
+                "LP",
+                "SP",
+                "TP",
+                "UA"
+            ],
+            "used": "Yes"
+        },
+        {
+            "code": "X067",
+            "direction": "E",
+            "description": "Union General Export Authorisation No EU007 - ANNEX II G - referred to in Article 12(1)(d) of the Regulation (EU) 2021/821 of the European Parliament and of the Council",
+            "guidance_cds": "- 'Enter the nationality of the document (for UK use GB; for Union docs use EU) followed by:\n\n- For a Union General Export authorisation enter GEA followed by the reference number of the general authorisation document'\n\n- Use one of the following [document status codes](https://www.gov.uk/government/publications/uk-trade-tariff-document-status-codes-for-harmonised-declarations/uk-trade-tariff-document-status-codes-for-harmonised-declarations): AC, AE, AF, AP, AT, EA, EE, EP, ES, GE, GP, HP, IA, IP, JA, JP, LE, LP, SP, TP, UA",
+            "guidance_chief": "",
+            "status_codes_cds": [
+                "AC",
+                "AE",
+                "AF",
+                "AP",
+                "AT",
+                "EA",
+                "EE",
+                "EP",
+                "ES",
+                "GE",
+                "GP",
+                "HP",
+                "IA",
+                "IP",
+                "JA",
+                "JP",
+                "LE",
+                "LP",
+                "SP",
+                "TP",
+                "UA"
+            ],
+            "used": "Yes"
+        },
+        {
+            "code": "X068",
+            "direction": "E",
+            "description": "Union General Export Authorisation No EU008 - ANNEX II H - referred to in Article 12(1)(d) of the Regulation (EU) 2021/821 of the European Parliament and of the Council",
+            "guidance_cds": "- 'Enter the nationality of the document (for UK use GB; for Union docs use EU) followed by:\n\n- For a Union General Export authorisation enter GEA followed by the reference number of the general authorisation document'\n\n- Use one of the following [document status codes](https://www.gov.uk/government/publications/uk-trade-tariff-document-status-codes-for-harmonised-declarations/uk-trade-tariff-document-status-codes-for-harmonised-declarations): AC, AE, AF, AP, AT, EA, EE, EP, ES, GE, GP, HP, IA, IP, JA, JP, LE, LP, SP, TP, UA",
+            "guidance_chief": "",
+            "status_codes_cds": [
+                "AC",
+                "AE",
+                "AF",
+                "AP",
+                "AT",
+                "EA",
+                "EE",
+                "EP",
+                "ES",
+                "GE",
+                "GP",
+                "HP",
+                "IA",
+                "IP",
+                "JA",
+                "JP",
+                "LE",
+                "LP",
+                "SP",
+                "TP",
+                "UA"
+            ],
+            "used": "Yes"
+        },
+        {
+            "code": "X070",
+            "direction": "E",
+            "description": "Global Export Authorisation - referred to in Article 12(1)(b) of the Regulation (EU) 2021/821 of the European Parliament and of the Council",
+            "guidance_cds": "- Enter the nationality of the document (for UK use GB; for Union docs use EU) followed by: \n\n- For a Global Export authorisation enter EAG followed by the reference number of the authorisation document\n\n- Use one of the following [document status codes](https://www.gov.uk/government/publications/uk-trade-tariff-document-status-codes-for-harmonised-declarations/uk-trade-tariff-document-status-codes-for-harmonised-declarations): AC, AE, AF, AP, AT, EA, EE, EP, ES, GE, GP, HP, IA, IP, JA, JP, LE, LP, SP, TP, UA",
+            "guidance_chief": "",
+            "status_codes_cds": [
+                "AC",
+                "AE",
+                "AF",
+                "AP",
+                "AT",
+                "EA",
+                "EE",
+                "EP",
+                "ES",
+                "GE",
+                "GP",
+                "HP",
+                "IA",
+                "IP",
+                "JA",
+                "JP",
+                "LE",
+                "LP",
+                "SP",
+                "TP",
+                "UA"
+            ],
+            "used": "Yes"
+        },
+        {
+            "code": "X072",
+            "direction": "E",
+            "description": "Transit Licence for dual Use Items - referred to in Article 7 of the Regulation (EU) 2021/821 of the European Parliament and of the Council",
+            "guidance_cds": "- Enter the nationality of the document (for UK use GB; for Union docs use EU) followed by: \n\n- For a Transit Licence for Dual use items enter TLD followed by the licence number \n\n- If using more than one licence, then a separate X072 entry in DE 2/3 is required for each licence.\n\n- Use one of the following [document status codes](https://www.gov.uk/government/publications/uk-trade-tariff-document-status-codes-for-harmonised-declarations/uk-trade-tariff-document-status-codes-for-harmonised-declarations): AC, AE, AF, AP, AT, EA, EE, EP, ES, GE, GP, HP, IA, IP, JA, JP, LE, LP, SP, TP, UA",
+            "guidance_chief": "",
+            "status_codes_cds": [
+                "AC",
+                "AE",
+                "AF",
+                "AP",
+                "AT",
+                "EA",
+                "EE",
+                "EP",
+                "ES",
+                "GE",
+                "GP",
+                "HP",
+                "IA",
+                "IP",
+                "JA",
+                "JP",
+                "LE",
+                "LP",
+                "SP",
+                "TP",
+                "UA"
+            ],
+            "used": "No"
+        },
+        {
             "code": "Y001",
             "direction": "I",
             "description": "Wholly obtained in Lebanon and transported directly from that country to the Union. Certificate of Origin to support a claim to tariff quota on olive oil imported from Lebanon, declaring that the oil originated in and was transported direct from that country.",
@@ -5896,7 +6459,7 @@
                 "US",
                 "XB"
             ],
-            "used": "No"
+            "used": "Yes"
         },
         {
             "code": "Y003",
@@ -5935,7 +6498,7 @@
                 "XA",
                 "XB"
             ],
-            "used": "No"
+            "used": "Yes"
         },
         {
             "code": "Y007",
@@ -5947,7 +6510,7 @@
                 "XA",
                 "XB"
             ],
-            "used": "No"
+            "used": "Yes"
         },
         {
             "code": "Y008",
@@ -6315,7 +6878,7 @@
                 "US",
                 "XB"
             ],
-            "used": "No"
+            "used": "Yes"
         },
         {
             "code": "Y046",
@@ -6923,6 +7486,60 @@
             "guidance_cds": "- Complete the statement 'Exempt A.254, Regulation 952/2013' Use of this code constitutes a legal declaration that the goods are exempt from the provisions of Article 254 of Regulation (EU) No 952/2013.\n\n- Sufficient evidence must be held in records to demonstrate eligibility for this exemption which must be produced on demand\n\n- No document status code is required.",
             "guidance_chief": "",
             "status_codes_cds": [],
+            "used": "No"
+        },
+        {
+            "code": "Y117",
+            "direction": "B",
+            "description": "Dangerous product - release for free circulation not authorised - Regulation (EU) 2019/1020, Art. 28(1) of 20 June 2019 on market surveillance and compliance of products and amending Directive 2004/42/EC and Regulations (EC) No 765/2008 and (EU) No 305/2011",
+            "guidance_cds": "- Complete the statement 'Free circulation not authorised'.\n\n- Use of this code constitues a legal declaration that the goods are considered to be a dangerous product prohibited from release to free circulation under Regulation (EU) 2019/1020, Art.\n\n- 28(1) of 20 June 2019 on market surveillance and compliance of products and amending Directive 2004/42/EC and Regulations (EC) No 765/2008 and (EU) No 305/2011.\n\n- Goods using this document code must not be declared to a free circualtion procedure code.\n\n- No document status code is required.",
+            "guidance_chief": "",
+            "status_codes_cds": [],
+            "used": "No"
+        },
+        {
+            "code": "Y118",
+            "direction": "B",
+            "description": "Product not in conformity - release for free circulation not authorised - Regulation (EU) 2019/1020, Art. 28(2) of 20 June 2019 on market surveillance and compliance of products and amending Directive 2004/42/EC and Regulations (EC) No 765/2008 and (EU) No 305/2011",
+            "guidance_cds": "- Complete the statement 'Free circulation not authorised'.\n\n- Use of this code constitues a legal declaration that the goods are considered to be not in conformity and prohibited from release to free circulation under Regulation (EU) 2019/1020, Art.\n\n- 28(2) of 20 June 2019 on market surveillance and compliance of products and amending Directive 2004/42/EC and Regulations (EC) No 765/2008 and (EU) No 305/2011.\n\n- Goods using this document code must not be declared to a free circualtion procedure code.\n\n- No document status code is required.",
+            "guidance_chief": "",
+            "status_codes_cds": [],
+            "used": "No"
+        },
+        {
+            "code": "Y120",
+            "direction": "I",
+            "description": "Undertaking importing less than 100 tonnes of CO2 equivalent of hydrofluorocarbons per year and exempted from the reduction of the quantity of hydrofluorocarbons placed on the EU market according to article 15.2 first sub paragraph of Regulation (EU) No 517/2014",
+            "guidance_cds": "- Complete the statement 'Excluded from regulation 517/2014'.\n\n- Use of this code constitutes a legal declaration that the goods are exempted from the reduction of the quantity of hydrofluorocarbons placed on the EU market according to article 15.2 first sub paragraph of Regulation (EU) No 517/2014.\n\n- Sufficient evidence must be held in records to demonstrate eligibility for this exemption, which must be produced on demand.\n\n- No document status code is required.",
+            "guidance_chief": "",
+            "status_codes_cds": [],
+            "used": "Yes"
+        },
+        {
+            "code": "Y123",
+            "direction": "I",
+            "description": "Undertaking registered according to Art. 19 of Regulation (EU) No 517/2014, and Article 1.2 of Commission Implementing Regulation (EU) 1191/2014 as amended by Commission Implementing Regulation (EU) 2017/1375",
+            "guidance_cds": "- Complete the statement 'regulation 517/2014 Registered'.\n\n- Use of this code constitutes a legal declaration that the goods are covered by an undertaking registered according to Art.\n\n- 19 of Regulation (EU) No 517/2014, and Article 1.2 of Commission Implementing Regulation (EU) 1191/2014 as amended by Commission Implementing Regulation (EU) 2017/1375.\n\n- Sufficient evidence must be held in records to demonstrate compliance with the registration obligations, which must be produced on demand.\n\n- No document status code is required.",
+            "guidance_chief": "",
+            "status_codes_cds": [],
+            "used": "Yes"
+        },
+        {
+            "code": "Y124",
+            "direction": "I",
+            "description": "Undertaking importing smaller amount of fluorinated greenhouse gases per year than that specified in Article 19.1 for bulk imports and 19.4 for products and equipment imports, and therefore not covered by the registration requirement according to Art. 19.1 and 19.4 of Regulation (EU) No 517/2014, and Article 1.2 of Commission Implementing Regulation (EU) 1191/2014 as amended by Commission Implementing Regulation (EU) 2017/1375",
+            "guidance_cds": "- Complete the statement 'Excluded from regulation 517/2014'.\n\n- Use of this code constitutes a legal declaration that the goods are entitled to an exemption from the registration requirement according to Art.\n\n- 19.1 and 19.4 of Regulation (EU) No 517/2014, and Article 1.2 of Commission Implementing Regulation (EU) 1191/2014 as amended by Commission Implementing Regulation (EU) 2017/1375.\n\n- Sufficient evidence must be held in records to demonstrate eligibility for this exemption, which must be produced on demand.\n\n- No document status code is required.",
+            "guidance_chief": "",
+            "status_codes_cds": [],
+            "used": "Yes"
+        },
+        {
+            "code": "Y125",
+            "direction": "I",
+            "description": "Import falling under Article 15.1 of Regulation (EU) No 517/2014 on the reduction of the quantity of hydrofluorocarbons placed on the EU market",
+            "guidance_cds": "- Complete the statement 'regulation 517/2014 Quota'.\n\n- Use of this code constitutes a legal declaration that the goods are imported under a quota allocated pursuant to Regulation (EU) No 517/2014 Article 16(5) or transferred pursuant to Article 18.\n\n- Sufficient evidence must be held in records to demonstrate compliance with quota controls, which must be produced on demand.\n\n- No document status code is required.",
+            "guidance_chief": "",
+            "status_codes_cds": [],
             "used": "Yes"
         },
         {
@@ -7169,6 +7786,177 @@
             "used": "Yes"
         },
         {
+            "code": "Y801",
+            "direction": "E",
+            "description": "Goods other than those concerned by the prohibitions defined in articles 1e(1) and 1f(1) of Regulation (EC) No 765/2006",
+            "guidance_cds": "- 'Complete the statement 'regulation 765/2006 exempt'.\n\n- Use of this code constitutes a legal declaration that the goods are not prohibited under Articles 1e(1) or 1f(1) of Regulation (EU) 765/2006 as amended.\n\n- Sufficient evidence must be held in records to demonstrate eligibility for this exemption, which must be produced on demand.\n\n- No document status code is required.",
+            "guidance_chief": "",
+            "status_codes_cds": [],
+            "used": "Yes"
+        },
+        {
+            "code": "Y802",
+            "direction": "I/E",
+            "description": "The prohibitions defined in articles 1e(1) and 1f(1) of Regulation (EC) No 765/2006 do not apply (see exemptions in articles 1e(3) and 1f(3)",
+            "guidance_cds": "- 'Complete the statement as follows depending on the entitlement to exemption - Complete 'Article 1e(3)(a) exemption' or 'Article 1f(3)(a) exemption'as approriate, for exemption covering humanitarian purposes, health emergencies, the urgent prevention or mitigation of an event likely to have a serious and significant impact on human health and safety or on the environment, or as a response to natural disasters;\n\n- Complete 'Article 1e(3)(b) exemption' or 'Article 1f(3)(a) exemption' as approriate,' for exemption covering medical or pharmaceutical purposes\n\n- Complete 'Article 1e(3)(c) exemption' or 'Article 1f(3)(a) exemption' as approriate, for exemption covering temporary use by news media;\n\n- Complete 'Article 1e(3)(d) exemption' or 'Article 1f(3)(a) exemption' as approriate, for exemption covering software updates\n\n- Complete 'Article 1e(3)(e) exemption' or 'Article 1f(3)(a) exemption' as approriate, for exemption covering use as consumer communication devices\n\n- Complete 'Article 1e(3)(f) exemption' or 'Article 1f(3)(a) exemption' as approriate, for exemption covering ensuring cyber-security and information security for natural or legal persons, entities or bodies in Belarus except for its government and undertakings directly or indirectly controlled by that government\n\n- Complete 'Article 1e(3)(g) exemption' or 'Article 1f(3)(a) exemption' as approriate, for exemption covering personal use of natural persons travelling to Belarus, and limited to personal effects, household effects, vehicles or tools of trade owned by those individuals and not intended for sale.\n\n- Use of these code constitutes a legal declaration that the goods are entitled to an exemption under articles 1e(3) and 1f(3) Regulation (EU) 765/2006 as amended.\n\n- Sufficient evidence must be held in records to demonstrate eligibility for this exemption, which must be produced on demand.\n\n- No document status code is required.",
+            "guidance_chief": "",
+            "status_codes_cds": [],
+            "used": "Yes"
+        },
+        {
+            "code": "Y805",
+            "direction": "I",
+            "description": "The prohibitions defined in article 1o of Council Regulation (EC) No 765/2006 do not apply (see contractual exemptions in article 1o(2)",
+            "guidance_cds": "- Complete the statement 'regulation 765/2006 exempt'.\n\n- Use of this code constitutes a legal declaration that the goods are entitled to an exemption from prohibition under Regulation (EU) 765/2006 as amended.\n\n- The exemption covers the execution until 4 June 2022 of contracts concluded before 2 March 2022, or ancillary contracts necessary for the execution of such contracts.\n\n- Sufficient evidence must be held in records to demonstrate eligibility for this exemption, which must be produced on demand.\n\n- No document status code is required.",
+            "guidance_chief": "",
+            "status_codes_cds": [],
+            "used": "Yes"
+        },
+        {
+            "code": "Y806",
+            "direction": "I",
+            "description": "The prohibitions defined in article 1p of Council Regulation (EU) No 765/2006 do not apply (see contractual exemptions in article 1p(2))",
+            "guidance_cds": "- Complete the statement 'Contractual exemption'.\n\n- Use of this code constitutes a legal declaration that the goods are entitled to an exemption from prohibition under Regulation (EU) 765/2006 as amended.\n\n- The exemption covers the execution until 4 June 2022 of contracts concluded before 2 March 2022, or ancillary contracts necessary for the execution of such contracts.\n\n- Sufficient evidence must be held in records to demonstrate eligibility for this exemption, which must be produced on demand.\n\n- No document status code is required.",
+            "guidance_chief": "",
+            "status_codes_cds": [],
+            "used": "Yes"
+        },
+        {
+            "code": "Y807",
+            "direction": "I",
+            "description": "The prohibitions defined in article 1q of Council Regulation (EC) No765/2006 do not apply (see contractual exemptions in article 1q(2))",
+            "guidance_cds": "- Complete the statement 'Contractual exemption'.\n\n- Use of this code constitutes a legal declaration that the goods are entitled to an exemption from prohibition under Regulation (EU) 765/2006 as amended.\n\n- The exemption covers the execution until 4 June 2022 of contracts concluded before 2 March 2022, or ancillary contracts necessary for the execution of such contracts.\n\n- Sufficient evidence must be held in records to demonstrate eligibility for this exemption, which must be produced on demand.\n\n- No document status code is required.",
+            "guidance_chief": "",
+            "status_codes_cds": [],
+            "used": "Yes"
+        },
+        {
+            "code": "Y808",
+            "direction": "I",
+            "description": "The prohibitions defined in article 1r of Council Regulation (EC) No 765/2006 do not apply (see contractual exemptions in article 1r(2))",
+            "guidance_cds": "- Complete the statement 'Contractual exemption'.\n\n- Use of this code constitutes a legal declaration that the goods are entitled to an exemption from prohibition under Regulation (EU) 765/2006 as amended.\n\n- This exemption covers the execution until 4 June 2022 of contracts concluded before 2 March 2022, or ancillary contracts necessary for the execution of such contracts.\n\n- Sufficient evidence must be held in records to demonstrate eligibility for this exemption, which must be produced on demand.\n\n- No document status code is required.",
+            "guidance_chief": "",
+            "status_codes_cds": [],
+            "used": "Yes"
+        },
+        {
+            "code": "Y809",
+            "direction": "E",
+            "description": "The prohibitions defined in article 1s of Council Regulation (EC) No 765/2006 do not apply (see contractual exemptions in article 1s(3))",
+            "guidance_cds": "- Complete the statement 'Contractual Exemption'.\n\n- Use of this code constitutes a legal declaration that the goods are entitled to an exemption from prohibition under Regulation (EU) 765/2006 as amended.\n\n- The exemption covers the execution until 4 June 2022 of contracts concluded before 2 March 2022, or ancillary contracts necessary for the execution of such contracts.\n\n- Sufficient evidence must be held in records to demonstrate eligibility for this exemption, which must be produced on demand.\n\n- No document status code is required.",
+            "guidance_chief": "",
+            "status_codes_cds": [],
+            "used": "Yes"
+        },
+        {
+            "code": "Y810",
+            "direction": "E",
+            "description": "Goods other than those concerned by the prohibitions defined in article 5i(1) of Regulation (EU) No 833/2014",
+            "guidance_cds": "- 'Complete the statement 'regulation 833/2014 exempt'.\n\n- Use of this code constitutes a legal declaration that the goods are not prohibited under Article 5i(1) Regulation (EU) 833/2014 as amended.\n\n- Sufficient evidence must be held in records to demonstrate eligibility for this exemption, which must be produced on demand.\n\n- No document status code is required.",
+            "guidance_chief": "",
+            "status_codes_cds": [],
+            "used": "Yes"
+        },
+        {
+            "code": "Y811",
+            "direction": "E",
+            "description": "The prohibitions defined in article 1s(1) of Council Regulation (EC) No 765/2006 do not apply (see exemptions in article 1s(2))",
+            "guidance_cds": "- 'Complete the statement as follows depending on the entitlement to exemption - Complete 'Article 1s(2)(a) exemption' for exemption covering humanitarian purposes, health emergencies, the urgent prevention or mitigation of an event likely to have a serious and significant impact on human health and safety or on the environment, or as a response to natural disasters;\n\n- Complete 'Article 1s(2)(b) exemption' for exemption covering medical or pharmaceutical purposes\n\n- Complete 'Article 1s(2)(c) exemption' for exemption covering temporary use by news media;\n\n- Complete 'Article 1s(2)(d) exemption' for exemption covering software updates\n\n- Complete 'Article 1s(2)(e) exemption' for exemption covering use as consumer communication devices\n\n- Complete 'Article 1s(2)(f) exemption for exemption covering ensuring cyber-security and information security for natural or legal persons, entities or bodies in Belarus except for its government and undertakings directly or indirectly controlled by that government\n\n- Complete 'Article 1s(2)(g) exemption' for exemption covering personal use of natural persons travelling to Belarus, and limited to personal effects, household effects, vehicles or tools of trade owned by those individuals and not intended for sale.\n\n- Use of these code constitutes a legal declaration that the goods are entitled to an exemption under article 1s(2) Regulation (EU) 765/2006 as amended.\n\n- Sufficient evidence must be held in records to demonstrate eligibility for this exemption, which must be produced on demand.\n\n- No document status code is required.",
+            "guidance_chief": "",
+            "status_codes_cds": [],
+            "used": "Yes"
+        },
+        {
+            "code": "Y812",
+            "direction": "E",
+            "description": "The prohibitions defined in article 5i paragraph 1 of Council Regulation (EU) No 833/2014 do not apply (see exemptions in article 5i(2))",
+            "guidance_cds": "- 'Complete the statement 'regulation 833/2014 exempt'.\n\n- Use of this code constitutes a legal declaration that the goods are entitled to an exemption from prohibition under articles 5i(2) of Regulation (EU) 833/2014 as amended.\n\n- Sufficient evidence must be held in records to demonstrate eligibility for this exemption, which must be produced on demand.\n\n- No document status code is required.",
+            "guidance_chief": "",
+            "status_codes_cds": [],
+            "used": "Yes"
+        },
+        {
+            "code": "Y813",
+            "direction": "E",
+            "description": "Goods other than those concerned by the prohibitions defined in article 1za(1) of Regulation (EC) No 765/2006",
+            "guidance_cds": "- Complete the statement 'regulation 765/2006 exempt'.\n\n- Use of this code constitutes a legal declaration that the goods are not concerned by Regulation (EU) 765/2006 Article 1ZA(1) prohibiting the export of euro denominated banknotes to Belarus or to any natural or legal person, entity or body in Belarus, including the Government and the Central Bank of Belarus, or for use in Belarus.\n\n- Sufficient evidence must be held in records to demonstrate eligibility for this waiver which must be produced on demand.\n\n- No document status code is required.",
+            "guidance_chief": "",
+            "status_codes_cds": [],
+            "used": "Yes"
+        },
+        {
+            "code": "Y814",
+            "direction": "E",
+            "description": "The prohibitions defined in article 1za paragraph 1 of Council Regulation (EC) No 765/2006 do not apply (see exemptions in article 1za(2)",
+            "guidance_cds": "- Complete the statement 'regulation 765/2006 exempt'.\n\n- Use of this code constitutes a legal declaration that the goods are entitled to an exemption under Article 1za(2) of Regulation (EU) 765/2006 as amended.\n\n- Sufficient evidence must be held in records to demonstrate eligibility for this exemption, which must be produced on demand.\n\n- No document status code is required.",
+            "guidance_chief": "",
+            "status_codes_cds": [],
+            "used": "Yes"
+        },
+        {
+            "code": "Y815",
+            "direction": "E",
+            "description": "Goods other than those concerned by the prohibitions defined in article 3f(1)of Regulation (EU) No 833/2014",
+            "guidance_cds": "- 'Complete the statement 'regulation 833/2014 exempt'.\n\n- Use of this code constitutes a legal declaration that the goods are not concerned with the prohibition under article 3f(1) of Regulation (EU) 833/2014 as amended.\n\n- Sufficient evidence must be held in records to demonstrate eligibility for this exemption, which must be produced on demand.\n\n- No document status code is required.",
+            "guidance_chief": "",
+            "status_codes_cds": [],
+            "used": "Yes"
+        },
+        {
+            "code": "Y816",
+            "direction": "E",
+            "description": "The prohibitions defined in article 3f paragraph 1 of Council Regulation (EU) No 833/2014 do not apply (see exemptions in article 3f(3)",
+            "guidance_cds": "- 'Complete the statement 'regulation 833/2014 exempt'.\n\n- Use of this code constitutes a legal declaration that the goods are entitled to an exemption under articles 3f(3) of Regulation (EU) 833/2014 as amended.\n\n- Sufficient evidence must be held in records to demonstrate eligibility for this exemption, which must be produced on demand.\n\n- No document status code is required.",
+            "guidance_chief": "",
+            "status_codes_cds": [],
+            "used": "Yes"
+        },
+        {
+            "code": "Y820",
+            "direction": "E",
+            "description": "The prohibitions defined in articles 3(1) and 3(2) of Council Regulation (EU) No 833/2014 do not apply (see contractual exemptions in article 3(4))",
+            "guidance_cds": "- 'Complete the statement 'Contractual exemption'.\n\n- Use of this code constitutes a legal declaration that the goods are entitled to an exemption under article 3(4) of Regulation (EU) 833/2014 as amended.\n\n- This exemption covers execution until 17 September 2022 of an obligation arising from a contract concluded before 16 March 2022, or ancillary contracts necessary for the execution of such a contract, provided that the competent authority has been informed at least five working days in advance.Sufficient evidence must be held in records to demonstrate eligibility for this exemption, which must be produced on demand.\n\n- No document status code is required.",
+            "guidance_chief": "",
+            "status_codes_cds": [],
+            "used": "Yes"
+        },
+        {
+            "code": "Y821",
+            "direction": "E",
+            "description": "Goods other than those concerned by the prohibitions defined in article 3h(1) of Regulation (EU) No 833/2014",
+            "guidance_cds": "- 'Complete the statement 'regulation 833/2014 exempt'.\n\n- Use of this code constitutes a legal declaration that the goods are not concerned with the prohibition under articles 3h(1) of Regulation (EU) 833/2014 as amended.\n\n- Sufficient evidence must be held in records to demonstrate eligibility for this exemption, which must be produced on demand.\n\n- No document status code is required.",
+            "guidance_chief": "",
+            "status_codes_cds": [],
+            "used": "Yes"
+        },
+        {
+            "code": "Y822",
+            "direction": "E",
+            "description": "The prohibitions defined in article 3h(1) of Council Regulation (EU) No 833/2014 do not apply (see exemptions in articles 3h(2) and 3h(3))",
+            "guidance_cds": "- 'Complete the statement 'regulation 833/2014 exempt'.\n\n- Use of this code constitutes a legal declaration that the goods are entitled to an exemption under article 3h(2) or Article 3h(3) of Regulation (EU) 833/2014 as amended.\n\n- Sufficient evidence must be held in records to demonstrate eligibility for this exemption, which must be produced on demand.\n\n- No document status code is required.",
+            "guidance_chief": "",
+            "status_codes_cds": [],
+            "used": "Yes"
+        },
+        {
+            "code": "Y824",
+            "direction": "I",
+            "description": "Goods other than those concerned by the prohibitions defined in article 3g(1) of Regulation (EU) No 833/2014",
+            "guidance_cds": "- Complete the statement 'regulation 833/2014 exempt'.\n\n- Use of this code constitutes a legal declaration that the goods are not concerned by Regulation (EU) 2019/2122 Article 3g(1) prohibiting the importation of iron and steel products listed in Appendix XVII of the regulation, originating in Russia.\n\n- Sufficient evidence must be held in records to demonstrate eligibility for this waiver which must be produced on demand.\n\n- No document status code is required.",
+            "guidance_chief": "",
+            "status_codes_cds": [],
+            "used": "Yes"
+        },
+        {
+            "code": "Y825",
+            "direction": "I",
+            "description": "The prohibitions defined in article 3g(1) of Council Regulation (EU) No 833/2014 do not apply (see contractual exemptions in article 3g(2))",
+            "guidance_cds": "- Complete the statement 'Contractual exemption'.\n\n- Use of this code constitutes a legal declaration that the goods are entitled to an exemption from prohibition under Regulation (EU) 2019/2122 Article 3g(2).\n\n- The exemption covers execution until 17 June 2022 of contracts concluded before 16 March 2022, or ancillary contracts necessary for the execution of such contracts.\n\n- Sufficient evidence must be held in records to demonstrate eligibility for this exemption which must be produced on demand.\n\n- No document status code is required.",
+            "guidance_chief": "",
+            "status_codes_cds": [],
+            "used": "Yes"
+        },
+        {
             "code": "Y900",
             "direction": "B",
             "description": "Declared goods do not belong to the Washington Convention (CITES) Commission regulation 160/2017 amending Council regulation (EC) No 338/97 on the protection of species of wild fauna and flora by regulating trade therein. See also Document Codes C400, C635 and C638",
@@ -7247,7 +8035,7 @@
             "guidance_cds": "- Complete the statement 'Exempted regulation (EU) 640/2010'.\n\n- Use of this code constitutes a legal declaration that the goods are not concerned by Regulation (EC) No. 1984/2003 (and/or Regulation (EU) No. 640/2010) introducing a system for the statistical monitoring of trade in bluefin tuna swordfish and bigeye tuna within the Union.\n\n- Sufficient evidence must be held in records to demonstrate eligibility for this waiver which must be produced on demand.\n\n- No document status code is required.",
             "guidance_chief": "",
             "status_codes_cds": [],
-            "used": "Yes"
+            "used": "No"
         },
         {
             "code": "Y910",
@@ -7597,6 +8385,24 @@
             "used": "Yes"
         },
         {
+            "code": "Y955",
+            "direction": "I",
+            "description": "Goods other than those falling under the import prohibitions defined in article 7.2 of Regulation (EU) No 517/2014",
+            "guidance_cds": "- Complete the statement 'Excluded from regulation 517/2014'.\n\n- Use of this code constitutes a legal declaration that the goods do not fall under the import prohibitions defined in article 7.2 of Regulation (EU) No 517/2014.\n\n- Sufficient evidence must be held in records to demonstrate eligibility for this exemption, which must be produced on demand.\n\n- No document status code is required.",
+            "guidance_chief": "",
+            "status_codes_cds": [],
+            "used": "Yes"
+        },
+        {
+            "code": "Y956",
+            "direction": "I",
+            "description": "Goods other than those falling under the reduction of the quantity of hydrofluorocarbons placed on the EU market defined in article 15 of Regulation (EU) No 517/2014",
+            "guidance_cds": "- Complete the statement 'Excluded from regulation 517/2014'.\n\n- Use of this code constitutes a legal declaration that the goods do not fall under the reduction of the quantity of hydrofluorocarbons placed on the EU market defined in article 15 of Regulation (EU) No 517/2014.\n\n- Sufficient evidence must be held in records to demonstrate eligibility for this exemption, which must be produced on demand.\n\n- No document status code is required.",
+            "guidance_chief": "",
+            "status_codes_cds": [],
+            "used": "Yes"
+        },
+        {
             "code": "Y957",
             "direction": "B",
             "description": "Goods other than those described in the MG footnotes linked to the measure (Annex II, Part V of Reg. (EU) 2017/1509).",
@@ -7732,6 +8538,15 @@
             "used": "Yes"
         },
         {
+            "code": "Y976",
+            "direction": "I",
+            "description": "Goods other than those falling under the registration obligation defined in Article 1.2 of Regulation (EU) 1191/2014 as amended by Commission Implementing Regulation (EU) 2017/1375",
+            "guidance_cds": "- Complete the statement 'Excluded from regulation 1191/2014'.\n\n- Use of this code constitutes a legal declaration that the goods do not fall under the registration obligation defined in Article 1.2 of Regulation (EU) 1191/2014 as amended by Commission Implementing Regulation (EU) 2017/1375.\n\n- Sufficient evidence must be held in records to demonstrate eligibility for this exemption, which must be produced on demand.\n\n- No document status code is required.",
+            "guidance_chief": "",
+            "status_codes_cds": [],
+            "used": "Yes"
+        },
+        {
             "code": "Y978",
             "direction": "I",
             "description": "Exemption by virtue of Article 1(3) of Regulation (EU) 2019/1793 repealing Commission Regulation (EC) No 669/2009 as regards the increased level of official controls on imports of certain feed and food of non-animal origin See also document code Y937",
@@ -7743,8 +8558,8 @@
         {
             "code": "Y980",
             "direction": "I",
-            "description": "Goods benefitting from derogation to veterinary controls according to Article 4 of Commission Delegated Regulation (EU) 2019/2126",
-            "guidance_cds": "- Complete the statement 'Exempt A.4, regulation (EU) 2019/2126' Use of this code constitutes a legal declaration that the goods are exempt under Article 4 of Commission Delegated Regulation (EU) 2019/2126 Sufficient evidence must be held in records to demonstrate eligibility for this derogation which must be produced on demand.\n\n- No document status code is required.",
+            "description": "Goods benefitting from derogation to veterinary controls according to Article 4 of Commission Delegated Regulation (EU) 2019/2126 (Fresh fishery products directly landed in Union ports designated by Member States from a fishing vessel flying a third country flag)",
+            "guidance_cds": "- Complete the statement 'Excluded from vet controls'.\n\n- Use of this code constitutes a legal declaration that the goods are entitled to an exemption under Commission Delegated Regulation (EU) 2019/2126 Article 4.\n\n- Sufficient evidence must be held in records to demonstrate eligibility for this exemption, which must be produced on demand.\n\n- No document status code is required.",
             "guidance_chief": "",
             "status_codes_cds": [],
             "used": "Yes"
@@ -7757,6 +8572,179 @@
             "guidance_chief": "",
             "status_codes_cds": [],
             "used": "No"
+        },
+        {
+            "code": "Y983",
+            "direction": "B",
+            "description": "The prohibitions defined in articles 2.1 and 4.1 of Council Regulation (EU) 2022/263 do not apply (see exemptions in articles 2.2 (Import) and 4.3 (Export))",
+            "guidance_cds": "- Complete the statement 'Excluded from regulation 2022/263'.\n\n- Use of this code constitutes a legal declaration that the goods are entitled to an exemption under Council Regulation (EU) 2022/632 Article 2.2 (Import) or Article 4.3 (Export).\n\n- Sufficient evidence must be held in records to demonstrate eligibility for this exemption, which must be produced on demand.\n\n- No document status code is required.",
+            "guidance_chief": "",
+            "status_codes_cds": [],
+            "used": "Yes"
+        },
+        {
+            "code": "Y984",
+            "direction": "B",
+            "description": "Goods not originating from or not destined for the areas of the Donetsk and Luhansk oblasts",
+            "guidance_cds": "- Complete the statement - Import 'Not from Donetsk or Luhansk'\n\n- Export 'Not for Donetsk or Luhansk'\n\n- Use of this code constitutes a legal declaration that the goods do not originate from, or are destined for, the Donetsk or Luhansk oblasts.\n\n- Sufficient evidence must be held in records to demonstrate eligibility for this exemption, which must be produced on demand.\n\n- No document status code is required.",
+            "guidance_chief": "",
+            "status_codes_cds": [],
+            "used": "Yes"
+        },
+        {
+            "code": "Y985",
+            "direction": "E",
+            "description": "Export authorisation by virtue of article 7 of Council Regulation (EU) 2022/263",
+            "guidance_cds": "- Enter the reference number of the authorisation for export.\n\n- Where a sequentially numbered range of certificates covers the goods, enter the lowest to the highest reference numbers of the certificates concerned, e.g. document code + 0054037-0054047: status code.\n\n- Where certificates are not sequentially numbered, enter the reference number of each certificate concerned.\n\n- Use one of the following [document status codes](https://www.gov.uk/government/publications/uk-trade-tariff-document-status-codes-for-harmonised-declarations/uk-trade-tariff-document-status-codes-for-harmonised-declarations): AC, AE, AF, AP, AT, GE, GP, HP, IA, IP, JA, JP, LE, LP, SP, TP, UA",
+            "guidance_chief": "",
+            "status_codes_cds": [
+                "AC",
+                "AE",
+                "AF",
+                "AP",
+                "AT",
+                "GE",
+                "GP",
+                "HP",
+                "IA",
+                "IP",
+                "JA",
+                "JP",
+                "LE",
+                "LP",
+                "SP",
+                "TP",
+                "UA"
+            ],
+            "used": "Yes"
+        },
+        {
+            "code": "Y986",
+            "direction": "I",
+            "description": "Exemption from import prohibition according to articles 11.1 and 11.2 of Regulation (EU) N\u00b0 517/2014",
+            "guidance_cds": "- Complete the statement 'regulation 517/2014 exempt'.\n\n- Use of this code constitutes a legal declaration that the goods entitled to an exemption under Article 11.1 and 11.2 of Regulation (EU) No. 517/2014. Sufficient evidence must be held in records to demonstrate eligibility for this waiver which must be produced on demand.\n\n- No document status code is required.",
+            "guidance_chief": "",
+            "status_codes_cds": [],
+            "used": "Yes"
+        },
+        {
+            "code": "Y987",
+            "direction": "E",
+            "description": "The prohibitions defined in articles 2.1 and 2a.1 of Council Regulation (EU) No 833/2014 do not apply (contractual exemptions)",
+            "guidance_cds": "- Complete the statement 'regulation 833/2014 exempt' Use of this code constitues a legal declaration that the goods are entitled to an exemption from the prohibition defined in Council Regulation (EU) No 833/2014.\n\n- Sufficient evidence must be held in records to demonstrate eligibility for this waiver which must be produced on demand.\n\n- No document status code is required.",
+            "guidance_chief": "",
+            "status_codes_cds": [],
+            "used": "Yes"
+        },
+        {
+            "code": "Y988",
+            "direction": "I",
+            "description": "A proof that the product has been exported from the United States to the Union prior to 10.11.2020 (Reg. 2020/1646)",
+            "guidance_cds": "- Complete the statement ' Exported from US before 10.11.2020 '.\n\n- Use of this code constitutes a legal declaration that the product has been exported from the United States to the Union prior to 10.11.2020.\n\n- Sufficient evidence must be held to demonstrate eligibility for this exemption which must be produced on demand.\n\n- Use the following [document status code](https://www.gov.uk/government/publications/uk-trade-tariff-document-status-codes-for-harmonised-declarations/uk-trade-tariff-document-status-codes-for-harmonised-declarations): Nostatuscoderequired",
+            "guidance_chief": "- Use one of the [status codes](https://www.gov.uk/government/publications/uk-trade-tariff-document-status-codes-for-harmonised-declarations/uk-trade-tariff-document-status-codes-for-harmonised-declarations) as appropriate (see Appendix C10) AC, AE,AF,AG,AP,GE, GP, HP, IA, IE, JA, JE\n\n",
+            "status_codes_cds": [
+                "Nostatuscoderequired"
+            ],
+            "used": "No"
+        },
+        {
+            "code": "Y990",
+            "direction": "E",
+            "description": "Export authorisation Council Regulation (EU) No 833/2014",
+            "guidance_cds": "- Enter the reference number of the authorisation for export.\n\n- Where a sequentially numbered range of certificates covers the goods, enter the lowest to the highest reference numbers of the certificates concerned, e.g. document code + 0054037-0054047: status code.\n\n- Where certificates are not sequentially numbered, enter the reference number of each certificate concerned.\n\n- Use one of the following [document status codes](https://www.gov.uk/government/publications/uk-trade-tariff-document-status-codes-for-harmonised-declarations/uk-trade-tariff-document-status-codes-for-harmonised-declarations): AC, AE, AF, AP, AT, GE, GP, HP, IA, IP, JA, JP, LE, LP, SP, TP, UA",
+            "guidance_chief": "",
+            "status_codes_cds": [
+                "AC",
+                "AE",
+                "AF",
+                "AP",
+                "AT",
+                "GE",
+                "GP",
+                "HP",
+                "IA",
+                "IP",
+                "JA",
+                "JP",
+                "LE",
+                "LP",
+                "SP",
+                "TP",
+                "UA"
+            ],
+            "used": "Yes"
+        },
+        {
+            "code": "Y991",
+            "direction": "E",
+            "description": "The prohibitions defined in articles 2.1 and 2a.1 of Council Regulation (EU) No 833/2014 do not apply (contractual exemptions)",
+            "guidance_cds": "- Complete the statement 'regulation 833/2014 exempt'.\n\n- Use of this code constitutes a legal declaration that the goods are entitled to an exemption from the prohibition defined in Council Regulation (EU) No 833/2014.\n\n- Sufficient evidence must be held in records to demonstrate eligibility for this waiver which must be produced on demand.\n\n- No document status code is required.",
+            "guidance_chief": "",
+            "status_codes_cds": [],
+            "used": "Yes"
+        },
+        {
+            "code": "Y992",
+            "direction": "E",
+            "description": "Export authorisation, or case of emergency, under Council Regulation (EU) No 833/2014",
+            "guidance_cds": "- Enter the reference number of the authorisation for export.\n\n- Where a sequentially numbered range of certificates covers the goods, enter the lowest to the highest reference numbers of the certificates concerned, e.g. document code + 0054037-0054047: status code.\n\n- Where certificates are not sequentially numbered, enter the reference number of each certificate concerned.\n\n- Use one of the following [document status codes](https://www.gov.uk/government/publications/uk-trade-tariff-document-status-codes-for-harmonised-declarations/uk-trade-tariff-document-status-codes-for-harmonised-declarations): AC, AE, AF, AP, AT, GE, GP, HP, IA, IP, JA, JP, LE, LP, SP, TP, UA",
+            "guidance_chief": "",
+            "status_codes_cds": [
+                "AC",
+                "AE",
+                "AF",
+                "AP",
+                "AT",
+                "GE",
+                "GP",
+                "HP",
+                "IA",
+                "IP",
+                "JA",
+                "JP",
+                "LE",
+                "LP",
+                "SP",
+                "TP",
+                "UA"
+            ],
+            "used": "Yes"
+        },
+        {
+            "code": "Y993",
+            "direction": "E",
+            "description": "The prohibitions defined in Council Regulation (EU) No 833/2014 do not apply (contractual exemptions)",
+            "guidance_cds": "- Complete the statement 'regulation 833/2014 exempt'.\n\n- Use of this code constitutes a legal declaration that the goods are entitled to an exemption from the prohibition defined in Council Regulation (EU) No 833/2014.\n\n- Sufficient evidence must be held in records to demonstrate eligibility for this waiver which must be produced on demand.\n\n- No document status code is required.",
+            "guidance_chief": "",
+            "status_codes_cds": [],
+            "used": "Yes"
+        },
+        {
+            "code": "Y994",
+            "direction": "E",
+            "description": "The prohibitions defined in Council Regulation (EU) No 833/2014 do not apply (contractual exemptions)",
+            "guidance_cds": "- Complete the statement 'regulation 833/2014 exempt'.\n\n- Use of this code constitutes a legal declaration that the goods are entitled to an exemption from the prohibition defined in Council Regulation (EU) No 833/2014.\n\n- Sufficient evidence must be held in records to demonstrate eligibility for this waiver which must be produced on demand.\n\n- No document status code is required.",
+            "guidance_chief": "",
+            "status_codes_cds": [],
+            "used": "No"
+        },
+        {
+            "code": "Y995",
+            "direction": "E",
+            "description": "Goods other than those concerned by the prohibitions defined in articles 2.1 and 2a.1 of Regulation (EU) No 833/2014",
+            "guidance_cds": "- Complete the statement 'regulation 833/2014 exempt'.\n\n- Use of this code constitutes a legal declaration that the goods are not concerned by Council Regulation (EU) No 833/2014 Articles 2.1 and 2a.1 prohibiting the export of dual use goods and technology to Russia.\n\n- Sufficient evidence must be held in records to demonstrate eligibility for this waiver which must be produced on demand.\n\n- No document status code is required.",
+            "guidance_chief": "",
+            "status_codes_cds": [],
+            "used": "Yes"
+        },
+        {
+            "code": "Y996",
+            "direction": "E",
+            "description": "Goods other than those concerned by the prohibitions defined in Regulation (EU) No 833/2014",
+            "guidance_cds": "- Complete the statement 'regulation 833/2014 exempt'.\n\n- Use of this code constitues a legal declaration that the goods are not concerned with the prohibition contained in Council Regulation (EU) No 833/2014.\n\n- Sufficient evidence must be held in records to demonstrate eligibility for this waiver which must be produced on demand.\n\n- No document status code is required.",
+            "guidance_chief": "",
+            "status_codes_cds": [],
+            "used": "Yes"
         },
         {
             "code": "108C",
@@ -8045,7 +9033,7 @@
         {
             "code": "9005",
             "direction": "Both",
-            "description": "All other import documents (including Department of Health) licences, permits or certificates other than those specifically identified by other document codes.\nSee also document codes C669, C670, C672, Y915 and Y923.",
+            "description": "All other import documents (including Department of Health) licences, permits or certificates other than those specifically identified by other document codes.\nSee also document codes C669, C670, C672, Y915 and Y923.\nWhen declaring a waiver status code (XX or XW as appropriate),a write off amount must be included in the seventh and eighth components of DE 2/3 with an amount of '0' after a recognised measurement unit (for example, 'KGM0').",
             "guidance_cds": "- Enter the following:\n\n\t- For Department of Health document enter GBDOH followed by the license number\n\n\t- For Other Licence, Permit or Certificate enter GBOTH followed by the license number\n\n\t- For Licence of conformity of hemp in accordance with Article 5 of Regulation No. 1676/2000 enter GBCPI followed by the license number\n\n\t- For Refund Certificate for Non-Annex 1 goods enter GBNAI followed by the license number\n\n\t- For UK cultural goods licence (Form C) enter GBCEX followed by the license number\n\n\t- For EU cultural goods (DCMS or EU issued) enter GBCEX followed by the license number\n\n\t- For Licence (Form C or EU licence) enter GBCEX followed by the license number\n\n\t- For Export waste permit enter GBEWP followed by the license number\n\n- If using more than one licence, then a separate 9005 entry in DE 2/3 is required for each licence.\n\n- Use one of the following [document status codes](https://www.gov.uk/government/publications/uk-trade-tariff-document-status-codes-for-harmonised-declarations/uk-trade-tariff-document-status-codes-for-harmonised-declarations): AC, AE, AF, AG, AP, AS, AT, EA, EE, EL, EP, ES, GE, GP, IA, IE, IP, IS, JA, JE, JP, JS, LE, LP, SP, TP, XB, XU, XW, XX",
             "guidance_chief": "- With the exception of FP, HP, the U series and XF, enter the appropriate status code listed in document status codes for harmonised declarations\n\n",
             "status_codes_cds": [
@@ -8083,9 +9071,54 @@
             "used": "No"
         },
         {
+            "code": "9006",
+            "direction": "Both",
+            "description": "Diplomatic: this exemption applies to sanctioned goods are necessary for the official purposes of a diplomatic mission or consular post in Russia, or of an international organisation enjoying immunities in accordance with international law",
+            "guidance_cds": "- Complete the statement 'Exempt Diplomatic'.\n\n- Use of this code constitutes a legal declaration that the goods are necessary for the official purposes of a diplomatic mission or consular post in Russia, or of an international organisation enjoying immunities in accordance with international law.\n\n- Sufficient evidence must be held in records to demonstrate eligibility for this waiver which must be produced on demand.\n\n- No document status code is required.",
+            "guidance_chief": "",
+            "status_codes_cds": [],
+            "used": "Yes"
+        },
+        {
+            "code": "9007",
+            "direction": "Both",
+            "description": "Personal : this exemption applies if the sanctioned goods are either the personal effects of a person travelling to Russia or are of a non-commercial nature for the personal use of a person travelling to Russia and contained in that person's luggage",
+            "guidance_cds": "- Complete the statement 'Exempt personal effects'.\n\n- Use of this code constitutes a legal declaration that the goods are either the personal effects of a person travelling to Russia or are of a non-commercial nature for the personal use of a person travelling to Russia and contained in that person's luggage.\n\n- Sufficient evidence must be held in records to demonstrate eligibility for this waiver which must be produced on demand.\n\n- No document status code is required.",
+            "guidance_chief": "",
+            "status_codes_cds": [],
+            "used": "Yes"
+        },
+        {
+            "code": "9008",
+            "direction": "Import",
+            "description": "A proof that the product has been exported from Russia or Belarus to the UK prior to 25.03.2022",
+            "guidance_cds": "- Complete the statement -\n\n- Goods exported from Russia - 'Exported from Russia pre 25032022'.\n\n- Goods exported from Belarus -\n\n- 'Exported from Belarus pre 25032022'.\n\n- Use of this code constitutes a legal declaration that the product has been exported from Russia or Belarus to the UK prior to 25.03.2022.\n\n- Sufficient evidence must be held to demonstrate eligibility for this exemption which must be produced on demand.\n\n- No document status code is required.",
+            "guidance_chief": "",
+            "status_codes_cds": [],
+            "used": "Yes"
+        },
+        {
+            "code": "9009",
+            "direction": "Import",
+            "description": "Goods originating in non-government controlled Ukrainian territory with a certificate of origin issued by the Ukrainian authorities: Import allowed after checks",
+            "guidance_cds": "- Complete the statement 'Exempt from prohibition'.\n\n- Use of this code constitutes a legal declaration that the goods originating in non-government controlled Ukranian territory are covered by a certificate of origin issued by the Ukranian authorities and entitled to an exemption from the prohibition on the import of goods originating in the non-government controlled areas of Ukraine.\n\n- Sufficient evidence must be held in records to demonstrate eligibility for this exemption, which must be produced on demand.\n\n- No document status code is required.",
+            "guidance_chief": "",
+            "status_codes_cds": [],
+            "used": "Yes"
+        },
+        {
+            "code": "9010",
+            "direction": "Import",
+            "description": "Goods originating specifically in the non-government controlled areas of Donetsk and Luhansk oblasts if related to an obligation arising from a contract concluded before 23 February 2022: Import allowed subject to these contracts, or ancillary contracts necessary for their execution, being concluded by 24 August 2022, and the Secretary of State for the Department for International Trade being informed at least ten working days in advance of this exception being used.",
+            "guidance_cds": "- Complete the statement 'Contractual exemption'.\n\n- Use of this code constitutes a legal declaration that the goods are entitled to an exemption from the prohibition imposed on goods originating in the non-government controlled areas of Donetsk and Luhansk oblasts on the basis that they relate to an obligation arising from a contract concluded before 23 February 2022 and subject to these contracts, or ancillary contracts necessary for their execution, being concluded by 24 August 2022.\n\n- It is further a legal declaration that the Secretary of State for the Department for International Trade was informed at least ten working days in advance of this exception being used.\n\n- Sufficient evidence must be held in records to demonstrate eligibility for this exception, which must be produced on demand.\n\n- No document status code is required.",
+            "guidance_chief": "",
+            "status_codes_cds": [],
+            "used": "Yes"
+        },
+        {
             "code": "9100",
             "direction": "Import",
-            "description": "Firearms: Open Individual Licence.\nFirearms: Specific Individual Licence.\nNuclear Materials: Open Individual Licence.\nNuclear Materials: Specific Individual Licence.",
+            "description": "Firearms: Open Individual Licence.\nFirearms: Specific Individual Licence.\nNuclear Materials: Open Individual Licence.\nNuclear Materials: Specific Individual Licence.\nWhen declaring a waiver status code (XX or XW as appropriate),a write off amount must be included in the seventh and eighth components of DE 2/3 with an amount of '0' after a recognised measurement unit (for example, 'KGM0').",
             "guidance_cds": "- Enter the following -\n\n\t- For Open Individual Import Licence enter GBOIL followed by the licence number\n\n\t- For Specific Individual Import Licences enter GBSIL followed by the licence number\n\n- If using more than one licence, then a separate 9100 entry in DE 2/3 is required for each licence.\n\n- Use one of the following [document status codes](https://www.gov.uk/government/publications/uk-trade-tariff-document-status-codes-for-harmonised-declarations/uk-trade-tariff-document-status-codes-for-harmonised-declarations): AC, AE, AF, AG, AP, AS, AT, EA, EE, EL, EP, ES, GE, GP, JA, JE, JP, JS, LE, LP, UA, UE, UP, US, XA, XW, XX",
             "guidance_chief": "- With the exception of FP, HP, IA, IE, IP, IS, SP, TP, XB, XF, XU, XW, enter appropriate status code listed in document status codes for harmonised declarations.\n\n",
             "status_codes_cds": [
@@ -8122,7 +9155,7 @@
         {
             "code": "9101",
             "direction": "Import",
-            "description": "Chemical weapons - pre-cursor chemicals.",
+            "description": "Chemical weapons - pre-cursor chemicals.\nWhen declaring a waiver status code (XX or XW as appropriate),a write off amount must be included in the seventh and eighth components of DE 2/3 with an amount of '0' after a recognised measurement unit (for example, 'KGM0').",
             "guidance_cds": "- Enter GBSIL followed by the licence number. If using more than one licence, then a separate 9101 entry in DE 2/3 is required for each licence.\n\n- Use one of the following [document status codes](https://www.gov.uk/government/publications/uk-trade-tariff-document-status-codes-for-harmonised-declarations/uk-trade-tariff-document-status-codes-for-harmonised-declarations): AC, AE, AF, AG, AP, AS, AT, EA, EE, EL, EP, ES, GE, GP, JA, JE, JP, JS, LE, LP, UA, UE, UP, US, XA, XX",
             "guidance_chief": "- With the exception of FP, HP, IA, IE, IP, IS, SP, TP, XB, XF, XU, XW, enter appropriate status code listed in document status codes for harmonised declarations.\n\n",
             "status_codes_cds": [
@@ -8158,7 +9191,7 @@
         {
             "code": "9102",
             "direction": "Import",
-            "description": "Standard Individual Transhipment Licence.\nOpen general Transhipment Licence.",
+            "description": "Standard Individual Transhipment Licence.\nOpen general Transhipment Licence.\nWhen declaring a waiver status code (XX or XW as appropriate),a write off amount must be included in the seventh and eighth components of DE 2/3 with an amount of '0' after a recognised measurement unit (for example, 'KGM0').",
             "guidance_cds": "- Enter GBSIT followed by the licence number.\n\n- If using more than one licence, then a separate 9102 entry in DE 2/3 is required for each licence.\n\n- Use one of the following [document status codes](https://www.gov.uk/government/publications/uk-trade-tariff-document-status-codes-for-harmonised-declarations/uk-trade-tariff-document-status-codes-for-harmonised-declarations): AF, AP, AT, GE, GP, LE, LP, XX",
             "guidance_chief": "- Use one of the [status codes](https://www.gov.uk/government/publications/uk-trade-tariff-document-status-codes-for-harmonised-declarations/uk-trade-tariff-document-status-codes-for-harmonised-declarations) AF, AP, AT, GE, GP, LE, LP, XX.\n\n",
             "status_codes_cds": [
@@ -8210,7 +9243,7 @@
         {
             "code": "9104",
             "direction": "Export",
-            "description": "Standard Individual Export Licence: Military Goods and dual use goods subject to UK export controls.\nStandard Individual Transhipment Licence.\nOpen Individual Export Licence: military or dual use goods subject to national control.\nOpen General Export Licence (Military goods) or dual use goods subject to national control.\nOpen General Transhipment Licence.",
+            "description": "Standard Individual Export Licence: Military Goods and dual use goods subject to UK export controls.\nStandard Individual Transhipment Licence.\nOpen Individual Export Licence: military or dual use goods subject to national control.\nOpen General Export Licence (Military goods) or dual use goods subject to national control.\nOpen General Transhipment Licence.\nWhen declaring a waiver status code (XX or XW as appropriate),a write off amount must be included in the seventh and eighth components of DE 2/3 with an amount of '0' after a recognised measurement unit (for example, 'KGM0').",
             "guidance_cds": "- Enter the following -\n\n\t- For an Open General Export Licence enter GBOGE followed by the licence number\n\n\t- For Open Individual Export Licence enter GBOIE followed by the licence number\n\n\t- For Standard Individual Export Licences enter GBSIE followed by the licence number\n\n\t- For Standard Individual Transhipment Licence enter GBSIT followed by the licence number\n\n- If using more than one licence, then a separate 9104 entry in DE 2/3 is required for each licence.\n\n- For supplementary declarations use EA, IA, JA, or UA as appropriate\n\n- Use one of the following [document status codes](https://www.gov.uk/government/publications/uk-trade-tariff-document-status-codes-for-harmonised-declarations/uk-trade-tariff-document-status-codes-for-harmonised-declarations): AC, AE, AF, AP, AT, EA, EE, EP, ES, FP, GE, GP, HP, IA, IP, JA, JP, LE, LP, SP, TP, UA, XW, XX",
             "guidance_chief": "- With the exception of AG, AS, EL, IE, IS, JE, JS, UE, UP, US, XB, XF, XU, enter appropriate status code listed in document status codes for harmonised declarations.\n\n- For supplementary declarations use EA, IA, JA or UA as appropriate.\n\n",
             "status_codes_cds": [
@@ -8244,7 +9277,7 @@
         {
             "code": "9105",
             "direction": "Export",
-            "description": "Standard Individual Export Licence: radioactive sources.\nOpen Individual Export Licence: radioactive sources.\nOpen General Export Licence: radioactive sources.\nOpen General Transhipment Licence: radioactive sources.",
+            "description": "Standard Individual Export Licence: radioactive sources.\nOpen Individual Export Licence: radioactive sources.\nOpen General Export Licence: radioactive sources.\nOpen General Transhipment Licence: radioactive sources.\nWhen declaring a waiver status code (XX or XW as appropriate),a write off amount must be included in the seventh and eighth components of DE 2/3 with an amount of '0' after a recognised measurement unit (for example, 'KGM0').",
             "guidance_cds": "- Enter the following -\n\n\t- For an Open General Export Licence enter GBOGE followed by the licence number\n\n\t- For Open Individual Export Licence enter GBOIE followed by the licence number\n\n\t- For Standard Individual Export Licences enter GBSIE followed by the licence number\n\n\t- For Open General Transhipment Licences enter GBOGT followed by the licence number\n\n- If using more than one licence, then a separate 9105 entry in DE 2/3 is required for each licence.\n\n- For supplementary declarations use EA, IA, JA, or UA as appropriate\n\n- Use one of the following [document status codes](https://www.gov.uk/government/publications/uk-trade-tariff-document-status-codes-for-harmonised-declarations/uk-trade-tariff-document-status-codes-for-harmonised-declarations): AC, AE, AF, AP, AT, EA, EE, EP, ES, FP, GE, GP, HP, IA, IP, JA, JP, LE, LP, SP, TP, UA, XW, XX",
             "guidance_chief": "- With the exception of AG, AS, EL, IE, IS, JE, JS, UE, UP, US, XB, XF, XU, enter appropriate status code listed in document status codes for harmonised declarations.\n\n- For supplementary declarations use EA, IA, JA or UA as appropriate.\n\n",
             "status_codes_cds": [
@@ -8278,7 +9311,7 @@
         {
             "code": "9106",
             "direction": "Export",
-            "description": "Authorisation for torture goods.\nSee also codes C064, C068, E990, Y990, Y906 and Y907",
+            "description": "Authorisation for torture goods.\nSee also codes C064, C068, E990, Y990, Y906 and Y907\nWhen declaring a waiver status code (XX or XW as appropriate),a write off amount must be included in the seventh and eighth components of DE 2/3 with an amount of '0' after a recognised measurement unit (for example, 'KGM0').",
             "guidance_cds": "- Enter GBSIE followed by the licence number.\n\n- If using more than one licence, then a separate 9106 entry in DE 2/3 is required for each licence.\n\n- For supplementary declarations use EA, IA, JA, or UA as appropriate\n\n- Use one of the following [document status codes](https://www.gov.uk/government/publications/uk-trade-tariff-document-status-codes-for-harmonised-declarations/uk-trade-tariff-document-status-codes-for-harmonised-declarations): AC, AE, AF, AP, AT, EA, EE, EP, ES, FP, GE, GP, HP, IA, IP, JA, JP, LE, LP, SP, TP, UA, XA, XW, XX",
             "guidance_chief": "- With the exception of AG, AS, EL, IE, IS, JE, JS, UE, UP, US, XB, XF, XU, enter appropriate status code listed in document status codes for harmonised declarations.\n\n- For supplementary declarations use EA, IA, JA or UA as appropriate.\n\n",
             "status_codes_cds": [
@@ -8549,6 +9582,24 @@
             "used": "No"
         },
         {
+            "code": "9120",
+            "direction": "Import",
+            "description": "Importation of animal pathogens Licence under the Importation of Animal pathogens Order 1980 (IAPO).",
+            "guidance_cds": "- Enter GBAHC followed by the licence number.\n\n- If using more than one licence, then a separate 9120 entry in DE 2/3 is required for each licence.\n\n- Use one of the following [document status codes](https://www.gov.uk/government/publications/uk-trade-tariff-document-status-codes-for-harmonised-declarations/uk-trade-tariff-document-status-codes-for-harmonised-declarations): AC, AE, AF, AG, AP, AS, AT, XX",
+            "guidance_chief": "- Use one of the [status codes](https://www.gov.uk/government/publications/uk-trade-tariff-document-status-codes-for-harmonised-declarations/uk-trade-tariff-document-status-codes-for-harmonised-declarations) AC, AE, AF, AG, AP, AS, AT, XX.\n\n",
+            "status_codes_cds": [
+                "AC",
+                "AE",
+                "AF",
+                "AG",
+                "AP",
+                "AS",
+                "AT",
+                "XX"
+            ],
+            "used": "Yes"
+        },
+        {
             "code": "9121",
             "direction": "Import",
             "description": "DEFRA or Animal Health import licence/authorisation for products of animal origin.",
@@ -8651,11 +9702,20 @@
             "direction": "Import",
             "description": "Form C578 - undertaking to produce Form D.V. 1/invoice/CAP Licence/Preference certificate within 14 days.",
             "guidance_cds": "- Complete the statement 'Form C578 completed' in document identifier (second component) Document reason (fourth component) must be left blank.\n\n- Use the following [document status code](https://www.gov.uk/government/publications/uk-trade-tariff-document-status-codes-for-harmonised-declarations/uk-trade-tariff-document-status-codes-for-harmonised-declarations): AE",
-            "guidance_chief": "",
+            "guidance_chief": "No additional information is available",
             "status_codes_cds": [
                 "AE"
             ],
             "used": "No"
+        },
+        {
+            "code": "999L",
+            "direction": "Both",
+            "description": "Goods qualify for a document waiver or exemption from the measure shown against a specific commodity code.\n*Only applicable for use on GB import/export declarations.\nNot applicable for use on NI declarations\nEffective until 30.09.23",
+            "guidance_cds": "- Complete the statement 'CDS Waiver'.\n\n- Use of this code constitutes a legal declaration that the goods do not require the certificate or licence shown.\n\n- Sufficient evidence must be held in records to demonstrate eligibility for this waiver which must be produced on demand.\n\n- No document status code is required.",
+            "guidance_chief": "",
+            "status_codes_cds": [],
+            "used": "Yes"
         },
         {
             "code": "9AID",
