@@ -11,6 +11,7 @@ class MeasureCondition(object):
         self.condition_class_priority = 0
         self.guidance_cds = None
         self.guidance_chief = None
+        self.applies_to_chief = True
         self.status_codes_cds = None
     
     def populate(self):
@@ -27,14 +28,18 @@ class MeasureCondition(object):
             path = os.path.join(os.getcwd(), "chief_cds_guidance.json")
             f = open(path)
             data = json.load(f)
-            query = "document_codes[?code == '" + self.document_code + "']"
-            results = jmespath.search(query, data)
-            if len(results) > 0:
-                result = results[0]
+            try:
+                result = data[self.document_code]
                 self.guidance_cds = result["guidance_cds"]
                 self.guidance_chief = result["guidance_chief"]
                 self.status_codes_cds = result["status_codes_cds"]
-            pass
+                self.applies_to_chief = result["applies_to_chief"]
+            except:
+                result = None
+                self.guidance_cds = None
+                self.guidance_chief = None
+                self.status_codes_cds = None
+                self.applies_to_chief = False
     
     def get_class(self):
         exemptions = [
@@ -118,7 +123,8 @@ class MeasureCondition(object):
                 "condition_class": self.condition_class,
                 "guidance_cds": self.guidance_cds,
                 "guidance_chief": self.guidance_chief,
-                "status_codes_cds": self.status_codes_cds
+                "status_codes_cds": self.status_codes_cds,
+                "applies_to_chief": self.applies_to_chief
             }
         }
         return ret

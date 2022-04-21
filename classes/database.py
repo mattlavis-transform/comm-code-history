@@ -9,7 +9,7 @@ from dotenv import load_dotenv
 class Database:
     """PostgreSQL Database class."""
 
-    def __init__(self, which = "eu"):
+    def __init__(self, which = "uk"):
         load_dotenv('.env')
         if which == "eu":
             self.database_url = os.getenv('DATABASE_EU')
@@ -33,6 +33,7 @@ class Database:
         self.conn = None
 
     def run_query(self, query, params = None):
+        query = query.replace("\n", " ")
         """Run a SQL query."""
         try:
             self.open_connection()

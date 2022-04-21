@@ -219,7 +219,7 @@ class Commodity(object):
                 "description_plain": self.description,
                 "consigned": False,
                 "consigned_from": None,
-                "basid_duty_rate": "tbc",
+                "basic_duty_rate": "tbc",
                 "meursing_code": False,
                 "declarable": False
             },

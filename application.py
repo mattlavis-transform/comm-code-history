@@ -5,12 +5,14 @@ from posixpath import split
 from flask import Flask, request, jsonify
 from classes.sqlite_helper import DatabaseLite
 from commodity import Commodity
+from quota import Quota
 from measure import Measure
 
 
 class Application(object):
     def __init__(self):
-        self.database_filename = os.path.join(os.getcwd(), "db", "commodity-code-history.db")
+        self.database_filename = os.path.join(
+            os.getcwd(), "db", "commodity-code-history.db")
 
     def get_commodity_history(self):
         data = {}
@@ -38,7 +40,7 @@ class Application(object):
         data["data"] = instances
 
         return data
-    
+
     def get_guidance(self):
         path = os.path.join(os.getcwd(), "chief_cds_guidance.json")
         f = open(path)
@@ -64,22 +66,22 @@ class Application(object):
             certificate_description, certificate_type_description
             from document_codes dc where code = '""" + code + """' order by code 
             """
-            
+
         rows = db.run_query(sql)
         for row in rows:
             instance = {}
             attributes = {}
-            
+
             attributes["certificate_type_code"] = row[1]
             attributes["certificate_code"] = row[2]
             attributes["validity_start_date"] = row[3]
             attributes["certificate_description"] = row[4]
             attributes["certificate_type_description"] = row[5]
-            
+
             instance["id"] = row[0]
             instance["type"] = "document_code"
             instance["attributes"] = attributes
-            
+
             instances.append(instance)
             data["data"] = instances
 
@@ -104,7 +106,7 @@ class Application(object):
             select * from quota_order_numbers
             order by quota_order_number_id, quota_start_date, definition_start_date
             """
-        
+
         rows = db.run_query(sql)
         previous_order_number = -1
         for row in rows:
@@ -115,14 +117,14 @@ class Application(object):
                 instance = {}
                 attributes = {}
                 relationships = []
-                
+
                 attributes["sid"] = row[0]
                 attributes["quota_start_date"] = self.to_yyyymmdd(row[2])
                 attributes["quota_end_date"] = self.to_yyyymmdd(row[3])
-                
+
                 relationship = self.get_relationship(row)
                 relationships.append(relationship)
-                
+
                 instance["id"] = row[1]
                 instance["type"] = "quota_order_number"
                 instance["attributes"] = attributes
@@ -130,16 +132,16 @@ class Application(object):
             else:
                 relationship = self.get_relationship(row)
                 relationships.append(relationship)
-            
+
             previous_order_number = row[1]
 
         if instance:
             instances.append(instance)
-            
+
         data["data"] = instances
 
         return data
-    
+
     def get_relationship(self, row):
         relationship = {}
         attributes = {}
@@ -179,12 +181,12 @@ class Application(object):
             order_number_capture_code, validity_start_date, validity_end_date
             from measure_types mt order by 1;
             """
-            
+
         rows = db.run_query(sql)
         for row in rows:
             instance = {}
             attributes = {}
-            
+
             attributes["description"] = row[1]
             attributes["measure_type_series_id"] = row[2]
             attributes["measure_type_series_description"] = row[3]
@@ -193,17 +195,16 @@ class Application(object):
             attributes["order_number_capture_code"] = row[6]
             attributes["validity_start_date"] = self.to_yyyymmdd(row[7])
             attributes["validity_end_date"] = self.to_yyyymmdd(row[8])
-            
+
             instance["id"] = row[0]
             instance["type"] = "measure_type"
             instance["attributes"] = attributes
-            
+
             instances.append(instance)
-        
+
         data["data"] = instances
 
         return data
-
 
     def get_condition_codes(self):
         data = {}
@@ -212,12 +213,12 @@ class Application(object):
         sql = """
         select * from measure_condition_codes order by 1;
         """
-            
+
         rows = db.run_query(sql)
         for row in rows:
             instance = {}
             attributes = {}
-            
+
             attributes["id"] = row[0]
             attributes["validity_start_date"] = self.to_yyyymmdd(row[1])
             attributes["validity_end_date"] = self.to_yyyymmdd(row[2])
@@ -226,13 +227,12 @@ class Application(object):
             instance["id"] = row[0]
             instance["type"] = "measure_condition_code"
             instance["attributes"] = attributes
-            
+
             instances.append(instance)
-        
+
         data["data"] = instances
 
         return data
-
 
     def get_action_codes(self):
         data = {}
@@ -241,12 +241,12 @@ class Application(object):
         sql = """
         select * from measure_actions order by 1;
         """
-            
+
         rows = db.run_query(sql)
         for row in rows:
             instance = {}
             attributes = {}
-            
+
             attributes["id"] = row[0]
             attributes["validity_start_date"] = self.to_yyyymmdd(row[1])
             attributes["validity_end_date"] = self.to_yyyymmdd(row[2])
@@ -255,9 +255,9 @@ class Application(object):
             instance["id"] = row[0]
             instance["type"] = "measure_action"
             instance["attributes"] = attributes
-            
+
             instances.append(instance)
-        
+
         data["data"] = instances
 
         return data
@@ -268,10 +268,10 @@ class Application(object):
         else:
             if isinstance(s, str):
                 s = datetime.strptime(s, "%Y-%m-%d %H:%M:%S")
-            
+
             s = datetime.strftime(s, "%Y-%m-%d")
         return s
-        
+
     def to_display(self, s):
         if s is None:
             s = ""
@@ -285,3 +285,13 @@ class Application(object):
     def get_commodity(self, goods_nomenclature_item_id):
         commodity = Commodity(goods_nomenclature_item_id)
         return commodity.as_dict()
+
+    def get_quota(self, quota_order_number_id):
+        quota = Quota(quota_order_number_id)
+        quota.get_quota()
+        return quota.as_dict()
+
+    def get_quota_measures(self, quota_order_number_id):
+        quota = Quota(quota_order_number_id)
+        quota.get_quota_measures()
+        return quota.measures_as_dict()

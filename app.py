@@ -18,6 +18,7 @@ def get_commodity_history():
     commodity_history = g.app.get_commodity_history()
     return commodity_history
 
+
 @app.route('/guidance')
 def get_guidance():
     guidance = g.app.get_guidance()
@@ -65,6 +66,22 @@ def get_commodity(goods_nomenclature_item_id):
     # return "The product is " + str(goods_nomenclature_item_id)
     commodity = g.app.get_commodity(goods_nomenclature_item_id)
     return commodity
+
+
+@app.route('/quotas/<quota_order_number_id>')
+def get_quota(quota_order_number_id):
+    # return "The order number is " + str(quota_order_number_id)
+    quota = g.app.get_quota(quota_order_number_id)
+    a = 1
+    return quota
+
+
+@app.route('/quota_measures/<quota_order_number_id>')
+def get_quota_measures(quota_order_number_id):
+    # return "The order number is " + str(quota_order_number_id)
+    quota = g.app.get_quota_measures(quota_order_number_id)
+    a = 1
+    return quota
 
 
 if __name__ == '__main__':
