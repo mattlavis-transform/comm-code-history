@@ -11,19 +11,27 @@ class Quota(object):
     def __init__(self, quota_order_number_id):
         self.quota_order_number_id = quota_order_number_id
         self.measures = []
+        self.quota_order_number_origins = []
+        self.quota_definitions = []
+        
+        self.validity_start_date = None
+        self.validity_end_date = None
+        self.quota_type = ""
 
     def get_quota(self):
         self.get_core()
         if self.valid:
-            self.get_origins()
-            self.get_definitions()
-            self.get_balance_events()
-            self.get_subsidiary_events()
+            if self.quota_type != "Licenced":
+                self.get_origins()
+                self.get_definitions()
+                self.get_balance_events()
+                self.get_subsidiary_events()
 
     def get_quota_measures(self):
         self.get_core()
         if self.valid:
-            self.get_origins()
+            if self.quota_type != "Licenced":
+                self.get_origins()
             self.get_measures()
             
     def get_measures(self):
@@ -50,23 +58,37 @@ class Quota(object):
             self.measures.append(m.as_dict())
 
     def get_core(self):
-        sql = """
-        select validity_start_date, validity_end_date 
-        from quota_order_numbers qon where quota_order_number_id = %s;
-        """
-        d = Database()
-        params = [
-            self.quota_order_number_id
-        ]
-        rows = d.run_query(sql, params)
-        if rows:
-            row = rows[0]
-            self.validity_start_date = row[0]
-            self.validity_end_date = row[1]
-            self.valid = True
+        self.get_quota_type()
+        if self.quota_type == "Licenced":
+            if len(self.quota_order_number_id) == 6 and self.quota_order_number_id.isnumeric():
+                self.valid = True
+            else:
+                self.valid = False
         else:
-            self.valid = False
+            sql = """
+            select validity_start_date, validity_end_date 
+            from quota_order_numbers qon where quota_order_number_id = %s;
+            """
+            d = Database()
+            params = [
+                self.quota_order_number_id
+            ]
+            rows = d.run_query(sql, params)
+            if rows:
+                row = rows[0]
+                self.validity_start_date = row[0]
+                self.validity_end_date = row[1]
+                self.valid = True
+            else:
+                self.valid = False
+            
 
+    def get_quota_type(self):
+        if self.quota_order_number_id[2:3] == "4":
+            self.quota_type = "Licenced"
+        else:
+            self.quota_type = "First Come First Served"
+        
     def get_origins(self):
         sql = """
         select qono.geographical_area_id, ga.description, qono.validity_start_date, qono.validity_end_date
@@ -196,6 +218,7 @@ class Quota(object):
         if self.valid:
             self.data = {
                 "id": self.quota_order_number_id,
+                "quota_type": self.quota_type,
                 "validity_start_date": self.validity_start_date,
                 "validity_end_date": self.validity_end_date,
                 "type": "quota",
@@ -215,6 +238,7 @@ class Quota(object):
         if self.valid:
             self.data = {
                 "id": self.quota_order_number_id,
+                "quota_type": self.quota_type,
                 "validity_start_date": self.validity_start_date,
                 "validity_end_date": self.validity_end_date,
                 "type": "quota",
