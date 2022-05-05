@@ -6,6 +6,7 @@ from flask import Flask, request, jsonify
 from classes.sqlite_helper import DatabaseLite
 from commodity import Commodity
 from quota import Quota
+from quota_definition import QuotaDefinition
 from measure import Measure
 
 
@@ -295,3 +296,9 @@ class Application(object):
         quota = Quota(quota_order_number_id)
         quota.get_quota_measures()
         return quota.measures_as_dict()
+
+    def get_quota_definition(self, quota_definition_sid):
+        quota_definition = QuotaDefinition()
+        quota_definition.quota_definition_sid = quota_definition_sid
+        quota_definition.get_quota_definition()
+        return quota_definition.as_dict()

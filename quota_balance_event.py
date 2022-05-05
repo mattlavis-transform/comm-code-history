@@ -1,3 +1,5 @@
+import datetime
+
 class QuotaBalanceEvent(object):
     def __init__(self, row):
         self.row = row
@@ -5,8 +7,11 @@ class QuotaBalanceEvent(object):
         
     def populate(self):
         self.quota_definition_sid = self.row[0]
-        self.occurrence_timestamp = self.row[1]
-        self.last_import_date_in_allocation = self.row[2]
+        self.occurrence_timestamp = self.row[1].strftime("%Y-%m-%dT00:00:00.000Z")  # "1972-01-01T00:00:00.000Z"
+        if self.row[2] is None:
+            self.last_import_date_in_allocation = None
+        else:
+            self.last_import_date_in_allocation = self.row[2].strftime("%Y-%m-%dT00:00:00.000Z")  # "1972-01-01T00:00:00.000Z"
         self.old_balance = self.row[3]
         self.new_balance = self.row[4]
         self.imported_amount = self.row[5]

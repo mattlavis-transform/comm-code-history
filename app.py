@@ -1,10 +1,12 @@
 # app.py
 from flask import Flask, request
+from flask_cors import CORS
 
 
 import globals as g
 
 app = Flask(__name__)
+CORS(app)
 app.config['JSON_SORT_KEYS'] = False
 
 
@@ -74,6 +76,12 @@ def get_quota(quota_order_number_id):
     quota = g.app.get_quota(quota_order_number_id)
     a = 1
     return quota
+
+
+@app.route('/quota_definition/<quota_definition_sid>')
+def get_quota_definition(quota_definition_sid):
+    quota_definition = g.app.get_quota_definition(quota_definition_sid)
+    return quota_definition
 
 
 @app.route('/quota_measures/<quota_order_number_id>')
