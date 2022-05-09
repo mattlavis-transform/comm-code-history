@@ -1,6 +1,7 @@
 import os
 from classes.database import Database
 from quota_order_number_origin import QuotaOrderNumberOrigin
+from quota_order_number_origin_exclusion import QuotaOrderNumberOriginExclusion
 from quota_definition import QuotaDefinition
 from quota_measure import QuotaMeasure
 from quota_balance_event import QuotaBalanceEvent
@@ -12,8 +13,9 @@ class Quota(object):
         self.quota_order_number_id = quota_order_number_id
         self.measures = []
         self.quota_order_number_origins = []
+        self.quota_order_number_origin_exclusions = []
         self.quota_definitions = []
-        
+
         self.validity_start_date = None
         self.validity_end_date = None
         self.quota_type = ""
@@ -23,6 +25,8 @@ class Quota(object):
         if self.valid:
             if self.quota_type != "Licenced":
                 self.get_origins()
+                self.get_origin_exclusions()
+                self.assign_origin_exclusions()
                 self.get_definitions()
                 self.get_balance_events()
                 self.get_subsidiary_events()
@@ -33,7 +37,7 @@ class Quota(object):
             if self.quota_type != "Licenced":
                 self.get_origins()
             self.get_measures()
-            
+
     def get_measures(self):
         sql = """
         select m.goods_nomenclature_item_id, c.description as commodity_description,
@@ -41,10 +45,10 @@ class Quota(object):
         m.geographical_area_id, ga.description as geographical_area_description,
         m.validity_start_date, m.validity_end_date, m.duty
         from utils.materialized_all_duties m, measure_type_descriptions mtd,
-        utils.materialized_commodities c, utils.geographical_areas ga 
+        utils.materialized_commodities c, utils.geographical_areas ga
         where m.measure_type_id = mtd.measure_type_id
-        and m.goods_nomenclature_sid = c.goods_nomenclature_sid 
-        and m.geographical_area_id = ga.geographical_area_id 
+        and m.goods_nomenclature_sid = c.goods_nomenclature_sid
+        and m.geographical_area_id = ga.geographical_area_id
         and ordernumber = %s
         order by m.validity_start_date desc, m.goods_nomenclature_item_id;
         """
@@ -66,7 +70,7 @@ class Quota(object):
                 self.valid = False
         else:
             sql = """
-            select validity_start_date, validity_end_date 
+            select validity_start_date, validity_end_date
             from quota_order_numbers qon where quota_order_number_id = %s;
             """
             d = Database()
@@ -81,20 +85,20 @@ class Quota(object):
                 self.valid = True
             else:
                 self.valid = False
-            
 
     def get_quota_type(self):
         if self.quota_order_number_id[2:3] == "4":
             self.quota_type = "Licenced"
         else:
             self.quota_type = "First Come First Served"
-        
+
     def get_origins(self):
         sql = """
-        select qono.geographical_area_id, ga.description, qono.validity_start_date, qono.validity_end_date
+        select qono.geographical_area_id, ga.description,
+        qono.validity_start_date, qono.validity_end_date, qono.quota_order_number_origin_sid
         from quota_order_number_origins qono, quota_order_numbers qon, utils.geographical_areas ga
-        where qono.quota_order_number_sid = qon.quota_order_number_sid 
-        and ga.geographical_area_sid = qono.geographical_area_sid 
+        where qono.quota_order_number_sid = qon.quota_order_number_sid
+        and ga.geographical_area_sid = qono.geographical_area_sid
         and qon.quota_order_number_id = %s;"""
         d = Database()
         params = [
@@ -105,11 +109,44 @@ class Quota(object):
         for row in rows:
             qono = QuotaOrderNumberOrigin(row)
             self.quota_order_number_origins.append(qono.as_dict())
-    
+
+    def get_origin_exclusions(self):
+        sql = """
+        select excluded_geographical_area_sid, ga.description, ga.geographical_area_id, qon.quota_order_number_id,
+        qon.quota_order_number_sid, qono.quota_order_number_origin_sid
+        from quota_order_number_origin_exclusions qonoe, quota_order_number_origins qono,
+        quota_order_numbers qon, utils.geographical_areas ga
+        where qonoe.quota_order_number_origin_sid = qono.quota_order_number_origin_sid
+        and qono.quota_order_number_sid = qon.quota_order_number_sid
+        and qonoe.excluded_geographical_area_sid = ga.geographical_area_sid
+        and qon.quota_order_number_id =  %s
+        order by 2;"""
+        d = Database()
+        params = [
+            self.quota_order_number_id
+        ]
+        rows = d.run_query(sql, params)
+        self.quota_order_number_origin_exclusions = []
+        for row in rows:
+            qonoe = QuotaOrderNumberOriginExclusion(row)
+            self.quota_order_number_origin_exclusions.append(qonoe.as_dict())
+
+    def assign_origin_exclusions(self):
+        for origin in self.quota_order_number_origins:
+            for origin_exclusion in self.quota_order_number_origin_exclusions:
+                if origin_exclusion["quota_order_number_origin_sid"] == origin["quota_order_number_origin_sid"]:
+                    origin["exclusions"].append(
+                        {
+                            "excluded_geographical_area_sid": origin_exclusion["excluded_geographical_area_sid"],
+                            "geographical_area_id": origin_exclusion["geographical_area_id"],
+                            "description": origin_exclusion["description"]
+                        }
+                    )
+
     def get_definitions(self):
         sql = """select quota_order_number_id, quota_definition_sid, validity_start_date, validity_end_date,
         initial_volume, measurement_unit_code, measurement_unit_qualifier_code,
-        maximum_precision, critical_state, critical_threshold 
+        maximum_precision, critical_state, critical_threshold
         from quota_definitions qd
         where quota_order_number_id = %s
         and validity_start_date <= current_date
@@ -128,9 +165,9 @@ class Quota(object):
 
     def get_balance_events(self):
         sql = """select qbe.quota_definition_sid, qbe.occurrence_timestamp, qbe.last_import_date_in_allocation,
-        qbe.old_balance, qbe.new_balance, qbe.imported_amount 
-        from quota_balance_events qbe, quota_definitions qd 
-        where qbe.quota_definition_sid = qd.quota_definition_sid 
+        qbe.old_balance, qbe.new_balance, qbe.imported_amount
+        from quota_balance_events qbe, quota_definitions qd
+        where qbe.quota_definition_sid = qd.quota_definition_sid
         and qd.quota_order_number_id = %s
         order by qd.validity_start_date desc, occurrence_timestamp desc;
         """
@@ -146,40 +183,40 @@ class Quota(object):
             self.quota_balance_events.append(qbe.as_dict())
 
         self.assign_balance_events_to_definitions()
-            
+
     def get_subsidiary_events(self):
         sql = """
         select distinct qd.quota_definition_sid, ev.critical_state_change_date as stamp, 'Critical state change' as event_type, ev.critical_state as state
         from quota_critical_events ev, quota_definitions qd
-        where qd.quota_definition_sid = ev.quota_definition_sid 
+        where qd.quota_definition_sid = ev.quota_definition_sid
         and qd.quota_order_number_id = %s
 
         union
 
         select qd.quota_definition_sid, ev.exhaustion_date as stamp, 'Exhaustion event' as event_type, null as state
         from quota_exhaustion_events ev, quota_definitions qd
-        where qd.quota_definition_sid = ev.quota_definition_sid 
+        where qd.quota_definition_sid = ev.quota_definition_sid
         and qd.quota_order_number_id = %s
 
         union
 
         select qd.quota_definition_sid, ev.reopening_date as stamp, 'Reopening event' as event_type, null as state
         from quota_reopening_events ev, quota_definitions qd
-        where qd.quota_definition_sid = ev.quota_definition_sid 
+        where qd.quota_definition_sid = ev.quota_definition_sid
         and qd.quota_order_number_id = %s
-        
+
         union
 
         select qd.quota_definition_sid, ev.unblocking_date as stamp, 'Unblocking event' as event_type, null as state
         from quota_unblocking_events ev, quota_definitions qd
-        where qd.quota_definition_sid = ev.quota_definition_sid 
+        where qd.quota_definition_sid = ev.quota_definition_sid
         and qd.quota_order_number_id = %s
 
         union
 
         select qd.quota_definition_sid, ev.unsuspension_date as stamp, 'Unsuspension event' as event_type, null as state
         from quota_unsuspension_events ev, quota_definitions qd
-        where qd.quota_definition_sid = ev.quota_definition_sid 
+        where qd.quota_definition_sid = ev.quota_definition_sid
         and qd.quota_order_number_id = %s
 
         order by 1 desc, 2 desc;
@@ -213,7 +250,7 @@ class Quota(object):
                 if qse["quota_definition_sid"] == qd["quota_definition_sid"]:
                     qd["quota_subsidiary_events"].append(qse)
                     break
-    
+
     def as_dict(self):
         if self.valid:
             self.data = {
@@ -230,10 +267,9 @@ class Quota(object):
             }
         else:
             ret = {}
-            
+
         return ret
-     
-    
+
     def measures_as_dict(self):
         if self.valid:
             self.data = {
@@ -250,6 +286,5 @@ class Quota(object):
             }
         else:
             ret = {}
-            
+
         return ret
-     
