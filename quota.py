@@ -149,9 +149,9 @@ class Quota(object):
         maximum_precision, critical_state, critical_threshold
         from quota_definitions qd
         where quota_order_number_id = %s
-        and validity_start_date <= current_date
         order by validity_start_date desc;
         """
+        print(sql)
 
         d = Database()
         params = [

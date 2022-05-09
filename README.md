@@ -21,3 +21,7 @@ Flassk API to show deprecated APIs
 - Test remotely
 
   `https://comm-code-history.herokuapp.com/`
+
+
+- To restart the front-end and back-end services
+  `./startup.sh`

@@ -68,7 +68,7 @@ class Measure(object):
     def get_condition_permutations_complex(self):
         perm_object = None
         entities = []
-        
+
         # Count the instances first
         for mc in self.measure_conditions:
             if mc.positive:
@@ -89,7 +89,7 @@ class Measure(object):
         # Then group them, starting with the multiples first
         lst_sorted = sorted(self.measure_conditions, key=lambda x: x.condition_class_priority, reverse=True)
         lst_sorted = sorted(self.measure_conditions, key=lambda x: x.instance_count, reverse=True)
-        
+
         entities = []
         single_perms = []
         single_perms2 = []
@@ -111,18 +111,18 @@ class Measure(object):
                         else:
                             single_perms.append(mc.measure_condition_sid)
                             single_perms2.append(mc)
-                        
+
                         entities.append(entity)
-        
+
         condition_codes = []
 
         if len(single_perms2) > 0:
             single_perms2 = sorted(single_perms2, key=lambda x: x.condition_code, reverse=False)
             for perm in single_perms2:
                 condition_codes.append(perm.condition_code)
-                
+
             condition_codes = sorted(list(set(condition_codes)))
-            
+
             single_perms3 = {}
             for condition_code in condition_codes:
                 single_perms3[condition_code] = []
@@ -130,14 +130,14 @@ class Measure(object):
             for perm in single_perms2:
                 single_perms3[perm.condition_code].append(perm.measure_condition_sid)
             a = 1
-            
+
             single_perms4 = []
             for condition_code in single_perms3:
                 single_perms4.append(single_perms3[condition_code])
-                
+
             perm1_list = single_perms4[0]
             perm2_list = single_perms4[1]
-            
+
             for r in itertools.product(perm1_list, perm2_list):
                 single_perms = [r[0], r[1]]
                 perm_object["permutations"].append(single_perms)
@@ -170,7 +170,7 @@ class Measure(object):
                         perm_object["permutations"].append([mc.measure_condition_sid])
 
                     last_condition_code = mc.condition_code
-        
+
         self.condition_permutations.append(perm_object)
 
     def as_dict(self):
