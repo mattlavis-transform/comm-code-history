@@ -2,7 +2,7 @@ class QuotaSubsidiaryEvent(object):
     def __init__(self, row):
         self.row = row
         self.populate()
-        
+
     def populate(self):
         self.quota_definition_sid = self.row[0]
         self.timestamp = self.row[1]

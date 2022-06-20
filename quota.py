@@ -6,6 +6,7 @@ from quota_definition import QuotaDefinition
 from quota_measure import QuotaMeasure
 from quota_balance_event import QuotaBalanceEvent
 from quota_subsidiary_event import QuotaSubsidiaryEvent
+from quota_period import QuotaPeriod
 
 
 class Quota(object):
@@ -30,6 +31,7 @@ class Quota(object):
                 self.get_definitions()
                 self.get_balance_events()
                 self.get_subsidiary_events()
+                self.get_suspensions_and_blocking_periods()
 
     def get_quota_measures(self):
         self.get_core()
@@ -184,6 +186,46 @@ class Quota(object):
 
         self.assign_balance_events_to_definitions()
 
+    def get_suspensions_and_blocking_periods(self):
+        sql = """
+        select qsp.quota_definition_sid, qsp.suspension_start_date as start_date,
+        qsp.suspension_end_date as end_date, qsp.description, 'Suspension period' as period_type
+        from quota_suspension_periods qsp, quota_definitions qd
+        where qsp.quota_definition_sid = qd.quota_definition_sid
+        and qd.quota_order_number_id = %s
+
+        union
+
+        select qbp.quota_definition_sid, qbp.blocking_start_date as start_date,
+        qbp.blocking_end_date as end_date,
+        case
+            when qbp.blocking_period_type = 1 then 'Block the allocations for a quota due to a late publication.'
+            when qbp.blocking_period_type = 2 then 'Block the allocations for a quota after its reopening due to a volume increase.'
+            when qbp.blocking_period_type = 3 then 'Block the allocations for a quota after its reopening due to the reception of quota return requests.'
+            when qbp.blocking_period_type = 4 then 'Block the allocations for a quota due to the modification of the validity period after receiving quota return requests.'
+            when qbp.blocking_period_type = 5 then 'Block the allocations for a quota on request of a MSA.'
+            when qbp.blocking_period_type = 6 then 'Block the allocations for a quota due to an end-user decision.'
+            when qbp.blocking_period_type = 7 then 'Block the allocations for a quota due to an exceptional condition.'
+            when qbp.blocking_period_type = 8 then 'Block the allocations for a quota after its reopening due to a balance transfer.'
+        end as description, 'Blocking period' as period_type
+        from quota_blocking_periods qbp, quota_definitions qd
+        where qbp.quota_definition_sid = qd.quota_definition_sid
+        and qd.quota_order_number_id = %s
+        order by 1 desc;
+        """
+        d = Database()
+        params = [
+            self.quota_order_number_id,
+            self.quota_order_number_id
+        ]
+        rows = d.run_query(sql, params)
+        self.quota_periods = []
+        for row in rows:
+            p = QuotaPeriod(row)
+            self.quota_periods.append(p.as_dict())
+
+        self.assign_periods_to_definitions()
+
     def get_subsidiary_events(self):
         sql = """
         select distinct qd.quota_definition_sid, ev.critical_state_change_date as stamp, 'Critical state change' as event_type, ev.critical_state as state
@@ -249,6 +291,13 @@ class Quota(object):
             for qd in self.quota_definitions:
                 if qse["quota_definition_sid"] == qd["quota_definition_sid"]:
                     qd["quota_subsidiary_events"].append(qse)
+                    break
+
+    def assign_periods_to_definitions(self):
+        for qp in self.quota_periods:
+            for qd in self.quota_definitions:
+                if qp["quota_definition_sid"] == qd["quota_definition_sid"]:
+                    qd["quota_periods"].append(qp)
                     break
 
     def as_dict(self):

@@ -6,6 +6,7 @@ class QuotaDefinition(object):
     def __init__(self, row=None):
         self.quota_balance_events = []
         self.quota_subsidiary_events = []
+        self.quota_periods = []
 
         if row is not None:
             self.row = row
@@ -80,6 +81,7 @@ class QuotaDefinition(object):
             "critical_state": self.critical_state,
             "critical_threshold": self.critical_threshold,
             "quota_balance_events": self.quota_balance_events,
-            "quota_subsidiary_events": self.quota_subsidiary_events
+            "quota_subsidiary_events": self.quota_subsidiary_events,
+            "quota_periods": self.quota_periods
         }
         return ret
